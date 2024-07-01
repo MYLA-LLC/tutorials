@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.3.1/dist/full.css" rel="stylesheet" />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .sticky-nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div class="text-center my-8">
+        <h1 class="text-primary text-5xl font-bold mb-4">dIVa Tutorial</h1>
+        <p class="mb-4 text-lg">Follow these steps to get the most out of the dIVa application.</p>
+      </div>
+      <nav class="sticky-nav bg-neutral flex justify-center mb-8 py-4 shadow-md">
+        <a href="#desktop" class="btn btn-secondary btn-outline m-2">Desktop</a>
+        <a href="#meters" class="btn btn-secondary btn-outline m-2">Meters</a>
+        <a href="#speed-leveling-tracker" class="btn btn-secondary btn-outline m-2">Speed Leveling Tracker</a>
+        <a href="#settings" class="btn btn-secondary btn-outline m-2">Settings</a>
+      </nav>
+      <div id="desktop" class="card bg-neutral shadow-lg compact my-8">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-2xl">Desktop</h2>
+          <p class="mb-4">Screenshot of the Desktop window.</p>
+          <img src="images/desktop.png" alt="Desktop window" class="mb-4 mx-auto rounded-lg" />
+          <div class="mt-4">
+            <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Gold Meter:</strong> This meter can run either in-game or as a separate desktop window.</li>
+              <li>
+                <strong>Experience Meter:</strong> Similar to the Gold Meter, this meter can run either in-game or as a separate desktop window.
+              </li>
+              <li>
+                <strong>Speed Leveling Tracker:</strong> Monitors the speed at which your character levels up. Displays time for every Milestone!
+              </li>
+              <li>
+                <strong>Settings:</strong>
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Icon:</strong> Displays the current character's class.</li>
+                  <li><strong>Hover:</strong> Shows the current character's name and level when hovered over.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="meters" class="card bg-neutral shadow-lg compact my-8">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-2xl">Meters</h2>
+          <p class="mb-4">Screenshot of the Gold and Experience Meters</p>
+          <div class="flex">
+            <img src="images/gold.jpg" alt="Gold Meter" class="mb-4 mx-auto rounded-lg" />
+            <img src="images/exp.jpg" alt="Experience Meter" class="mb-4 mx-auto rounded-lg" />
+          </div>
+          <div class="mt-4">
+            <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Total Resource:</strong> Displays your current gold or experience collected in the session.</li>
+              <li><strong>Resource Per Second:</strong> Displays current gold or experience per second.</li>
+              <li><strong>Total Time:</strong> Shows the total time the meter has been running.</li>
+              <li><strong>Session High:</strong> Displays the highest amount of gold or experience gained in a session.</li>
+              <li><strong>Lifetime Average:</strong> Displays the lifetime average gold or experience per second.</li>
+              <li><strong>In-Game Overlay:</strong> Shows a limited subset of this information when used as an in-game overlay.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="speed-leveling-tracker" class="card bg-neutral shadow-lg compact my-8">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-2xl">Speed Leveling Tracker</h2>
+          <p class="mb-4">Screenshot of the Speed Leveling Tracker window.</p>
+          <img src="images/slt.png" alt="Speed Leveling Tracker" class="mb-4 mx-auto rounded-lg" />
+          <div class="mt-4">
+            <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li>
+                <strong>Milestones:</strong> Displays milestones along your leveling journey.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Total Time:</strong> The time taken within the milestone; accumulative of all the levels.</li>
+                  <li><strong>Level Breakdown:</strong> Shows the elapsed time for each level within the milestone.</li>
+                </ul>
+              </li>
+              <li><strong>Elapsed Time:</strong> Displays the elapsed time for each level individually.</li>
+              <li><strong>Progress Tracking:</strong> Tracks the time taken to reach each milestone and displays it in an expandable list.</li>
+              <li><strong>Control Button:</strong> Includes a play/pause button to start or stop the timer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="settings" class="card bg-neutral shadow-lg compact my-8">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-2xl">Settings</h2>
+          <p class="mb-4">Screenshot of the Settings window.</p>
+          <img src="images/settings.png" alt="Settings" class="mb-4 mx-auto rounded-lg" />
+          <div class="mt-4">
+            <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li>
+                <strong>Overlay Settings:</strong> Toggle overlay settings for Gold and Experience.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Gold:</strong> Enable Gold Meter as an in-game Overlay</li>
+                  <li><strong>Experience:</strong> Enable Experience Meter as an in-game Overlay</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Reset Data:</strong> Reset accumulated data for Gold and Experience.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Gold:</strong> Reset all gold-related data.</li>
+                  <li><strong>Experience:</strong> Reset all experience-related data.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Manage Aliases:</strong> Manage your Character's aliases.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Alias:</strong> User-assigned Alias to help distinguish between Character's of the same attributes</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Manage Subscription:</strong> Edit subscription details.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Edit:</strong> Update subscription settings and details.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="aliases" class="card bg-neutral shadow-lg compact w-4/5 mx-auto">
+            <div class="card-body">
+              <h2 class="card-title text-accent text-2xl">Manage Aliases</h2>
+              <p class="mb-4">Screenshot of the Aliases window.</p>
+              <img src="images/aliases.png" alt="Aliases" class="mb-4 mx-auto rounded-lg" />
+              <div class="mt-4">
+                <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
+                <ul class="list-disc list-inside ml-4 p-4">
+                  <li><strong>Class Icon:</strong> Displays the character's class.</li>
+                  <li><strong>Character Name:</strong> Displays the character's name.</li>
+                  <li><strong>Favorite:</strong>This auto-selects the alias when character of same attributes logs in</li>
+                  <li><strong>Remove:</strong> Delete the Character and all its data</li>
+                </ul>
+                <div class="pl-8">
+                  <p class="mb-4 underline">The Collapsable Information</p>
+                  <ul>
+                    <li><strong>Alias:</strong> User-assigned Alias to help distinguish between Character's of the same attributes</li>
+                    <li><strong>Level:</strong> Displays the Alias' last known level.</li>
+                    <li>
+                      <strong>Actions:</strong> Perform actions on the Alias.
+                      <ul class="list-disc list-inside ml-4">
+                        <li><strong>Edit:</strong> Update the Alias</li>
+                        <li><strong>Remove:</strong> Delete the Alias</li>
+                        <li><strong>Mark Alias as Favorite:</strong> Sets Alias as Favorite</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
