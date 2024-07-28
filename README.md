@@ -1,4 +1,4 @@
 # Tutorials for MYLA Products
 
-- [dIVa Tutorial](dIVa/index.html)
-- [dIVa - Diablo II: Resurrected Tutorial](dIVa-d2r/index.html)
+- [dIVa Tutorial](https://myla-llc.github.io/tutorials/dIVa/index.html)
+- [dIVa - Diablo II: Resurrected Tutorial](https://myla-llc.github.io/tutorials/dIVa-d2r/index.html)
