@@ -70,20 +70,39 @@
       <div id="characters" class="card bg-neutral shadow-lg compact my-8">
         <div class="card-body">
           <h2 class="card-title text-accent text-2xl">Characters</h2>
-          <p class="mb-4">Screenshot of the Characters window.</p>
-          <img src="images/characters-list.png" alt="Character List" class="mb-4 mx-auto rounded-lg" />
-          <img src="images/characters-active-character.png" alt="Active Character Display" class="mb-4 mx-auto rounded-lg" />
-          <img src="images/characters-add-new.png" alt="Add New Character Modal" class="mb-4 mx-auto rounded-lg" />
+          <div class="carousel w-full h-80">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="images/characters-list.png" alt="Character List" class="h-full object-contain mx-auto rounded-lg" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="images/characters-active-character.png" alt="Active Character Display" class="h-full object-contain mx-auto rounded-lg" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="images/characters-add-new.png" alt="Add New Character Modal" class="h-full object-contain mx-auto rounded-lg" />
+              <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
           <div class="mt-4">
             <h3 class="text-secondary text-xl font-semibold">Functionality</h3>
             <ul class="list-disc list-inside ml-4 p-4">
               <li>
-                <strong>Active Character:</strong> The top section shows the currently active character, displaying their name and class icon.<br />
-                If no character is detected, a red cog icon is shown with the message "No Character Detected."
-              </li>
-              <li>
                 <strong>Character List:</strong> View and manage your characters. Each character entry displays the name, current status (e.g.,
                 "Main," "Please select Favorite"), and offers options to edit, delete, or set as favorite.
+              </li>
+              <li>
+                <strong>Active Character:</strong> The top section shows the currently active character, displaying their name and class icon.<br />
+                If no character is detected, a red cog icon is shown with the message "No Character Detected."
               </li>
               <li>
                 <strong>Alias Information:</strong> When a character has multiple aliases, the alias information along with the last known level and
@@ -98,8 +117,8 @@
                 offline character progression through the new "Offline Mode" feature.
               </li>
               <li>
-                <strong>Character Management:</strong> Easily update and organize your characters, ensuring that your data remains consistent across
-                gaming sessions.
+                <strong>Character Management:</strong> Easily update aliases or delete characters, ensuring your character list remains accurate and
+                up to date.
               </li>
             </ul>
           </div>
