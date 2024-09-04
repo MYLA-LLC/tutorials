@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Characters - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
+      <div id="characters" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Characters</h2>
+          <p class="mb-4">
+            The management of character aliases has been improved with a dedicated "Characters" feature. This feature opens in its own window,
+            providing a streamlined interface for managing your characters and updating character-specific data for each game more efficiently. You
+            can also create new characters directly from this screen.
+          </p>
+          <h3 class="text-secondary text-lg sm:text-xl font-semibold">Preview Screenshot</h3>
+          <img src="images/preview/characters.png" alt="Characters Feature Screenshot" class="mb-4 mx-auto rounded-lg" />
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Class Icon:</strong> Displays the character's class.</li>
+              <li><strong>Character Name:</strong> Displays the character's name.</li>
+              <li><strong>Favorite:</strong> This auto-selects the alias when a character of the same attributes logs in.</li>
+              <li><strong>Remove:</strong> Delete the Character and all its data.</li>
+              <li><strong>Alias:</strong> User-assigned Alias to help distinguish between characters with the same attributes.</li>
+              <li><strong>Level:</strong> Displays the Alias' last known level.</li>
+              <li><strong>Actions:</strong> Perform actions on the Alias such as Edit, Remove, or Mark as Favorite.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

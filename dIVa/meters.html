@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meters - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
+      <div id="meters" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Meters</h2>
+          <p class="mb-4">Screenshots of the Gold and Experience Meters</p>
+          <div class="flex flex-wrap justify-center">
+            <img src="images/gold.png" alt="Gold Meter" class="mb-4 mx-auto rounded-lg" />
+            <img src="images/exp.png" alt="Experience Meter" class="mb-4 mx-auto rounded-lg" />
+          </div>
+          <div class="flex flex-wrap justify-center">
+            <img src="images/meter-overlays.png" alt="Meter Overlays" class="mb-4 mx-auto rounded-lg" />
+          </div>
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Total Resource:</strong> Displays your current gold or experience collected in the session.</li>
+              <li><strong>Resource Per Second:</strong> Displays current gold or experience per second.</li>
+              <li><strong>Total Time:</strong> Shows the total time the meter has been running.</li>
+              <li><strong>Session High:</strong> Displays the highest amount of gold or experience gained in a session.</li>
+              <li><strong>Lifetime Average:</strong> Displays the lifetime average gold or experience per second.</li>
+              <li><strong>In-Game Overlay:</strong> Shows a limited subset of this information when used as an in-game overlay.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

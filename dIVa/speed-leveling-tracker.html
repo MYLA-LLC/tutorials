@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Leveling Tracker - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <nav class="sticky-nav bg-neutral flex flex-wrap justify-center mb-8 py-4 shadow-md">
+        <a href="index.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Home</a>
+        <a href="upcoming.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Upcoming Features & Preview</a>
+        <a href="desktop.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Desktop</a>
+        <a href="meters.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Meters</a>
+        <a href="settings.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Settings</a>
+      </nav>
+      <div id="speed-leveling-tracker" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Speed Leveling Tracker</h2>
+          <p class="mb-4">Screenshot of the Speed Leveling Tracker window.</p>
+          <img src="images/slt.png" alt="Speed Leveling Tracker" class="mb-4 mx-auto rounded-lg" />
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li>
+                <strong>Milestones:</strong> Displays milestones along your leveling journey.
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Total Time:</strong> The time taken within the milestone; accumulative of all the levels.</li>
+                  <li><strong>Level Breakdown:</strong> Shows the elapsed time for each level within the milestone.</li>
+                </ul>
+              </li>
+              <li><strong>Elapsed Time:</strong> Displays the elapsed time for each level individually.</li>
+              <li><strong>Progress Tracking:</strong> Tracks the time taken to reach each milestone and displays it in an expandable list.</li>
+              <li><strong>Control Button:</strong> Includes a play/pause button to start or stop the timer.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

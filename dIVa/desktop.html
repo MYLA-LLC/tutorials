@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desktop - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+          });
+      </script>
+      <div id="desktop" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Desktop</h2>
+          <p class="mb-4">Screenshot of the Desktop window.</p>
+          <img src="images/desktop.png" alt="Desktop window" class="mb-4 mx-auto rounded-lg" />
+          <img src="images/desktop-full.png" alt="Full Desktop" class="mb-4 mx-auto rounded-lg" />
+
+          <h3 class="text-secondary text-lg sm:text-xl font-semibold">Preview Screenshot</h3>
+          <img src="images/preview/menu.png" alt="Menu Cleanup Screenshot" class="mb-4 mx-auto rounded-lg" />
+
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Gold Meter:</strong> This meter can run either in-game or as part of the desktop window.</li>
+              <li>
+                <strong>Experience Meter:</strong> Similar to the Gold Meter, this meter can run either in-game or as part of the desktop window.
+              </li>
+              <li>
+                <strong>Speed Leveling Tracker:</strong> Monitors the speed at which your character levels up. Displays time for every Milestone!
+              </li>
+              <li>
+                <strong>Settings:</strong>
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>Icon:</strong> Displays the current character's class.</li>
+                  <li><strong>Hover:</strong> Shows the current character's name and level when hovered over.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
