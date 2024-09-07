@@ -11,7 +11,6 @@
   <body>
     <div class="container mx-auto p-4">
       <div id="nav-placeholder"></div>
-
       <script>
         fetch("nav.html")
           .then((response) => response.text())
@@ -19,7 +18,6 @@
             document.getElementById("nav-placeholder").innerHTML = data;
           });
       </script>
-
       <div id="settings" class="card bg-neutral shadow-lg compact my-8 section-offset">
         <div class="card-body">
           <h2 class="card-title text-accent text-xl sm:text-2xl">Settings</h2>
@@ -27,10 +25,43 @@
           <img src="images/settings.png" alt="Settings" class="mb-4 mx-auto rounded-lg" />
           <div class="mt-4">
             <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
-            <ul class="list-disc list-inside ml-4 p-4">
-              <li><strong>Configuration:</strong> Adjust application settings.</li>
-              <li><strong>Reset Data:</strong> Clear accumulated data in the application.</li>
-              <li><strong>Manage Subscription:</strong> Update subscription details.</li>
+            <p>
+              The settings screen dynamically adjusts based on the game you are logged into. Here’s a breakdown of the functionality for managing
+              settings across different games like Diablo II or Diablo IV:
+            </p>
+            <ul class="list-disc ml-4 p-4 space-y-1">
+              <li>
+                <strong>User Tutorial:</strong>
+                <p>Click the tutorial link to access this step-by-step guide on how to use the dIVa application and its features.</p>
+              </li>
+              <li>
+                <strong>Version:</strong>
+                <p>The current version of the application is displayed here, ensuring you're using the most up-to-date features and improvements</p>
+              </li>
+              <li>
+                <strong>Game Configuration:</strong>
+                <ul class="ml-4">
+                  <li>
+                    <strong>Overlay Options:</strong> Depending on the game, you will see options such as Gold Overlay or Experience Overlay or other
+                    relevant configuration options for the logged-in game.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Reset Data:</strong>
+                <ul class="ml-4">
+                  <li>
+                    <strong>Reset Game Data:</strong> Clear accumulated data relevant to the game you're currently using (e.g., resetting gold,
+                    experience, or other game-specific data).
+                  </li>
+                  <li><strong>Delete Game Data:</strong> Completely remove stored data for the current game.</li>
+                  <li><strong>Delete All:</strong> Reset all stored data across the application, affecting all games.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Manage Subscription:</strong>
+                <p>Access your subscription options and manage your plan or billing details through our trusted partner, Tebex.</p>
+              </li>
             </ul>
           </div>
         </div>
