@@ -31,31 +31,24 @@
     </div>
     <a href="index.html" class="btn btn-ghost normal-case text-xl">dIVa</a>
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
-      <!-- Desktop menu items -->
-      <li><a href="desktop.html">Desktop</a></li>
-      <li class="dropdown dropdown-hover">
-        <details class="dropdown">
-          <summary>Features</summary>
-          <ul class="dropdown-content z-[100] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-            <li><a href="characters.html">Characters</a></li>
-            <li><a href="meters.html">Meters</a></li>
-            <li><a href="speed-leveling-tracker.html">Speed Leveling Tracker</a></li>
-            <li><a href="offline-mode.html">Offline Mode</a></li>
-          </ul>
-        </details>
-      </li>
-      <li class="dropdown dropdown-hover">
-        <details class="dropdown">
-          <summary>Diablo IV</summary>
-          <ul class="dropdown-content z-[100] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4">
-            <li><a href="dungeons.html">Dungeons</a></li>
-            <li><a href="sigils.html">Sigils</a></li>
-          </ul>
-        </details>
-      </li>
-    </ul>
+  <div class="navbar-center hidden lg:flex gap-2">
+    <a href="desktop.html" class="btn btn-ghost">Desktop</a>
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-ghost">Features</div>
+      <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 z-[100]">
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="meters.html">Meters</a></li>
+        <li><a href="speed-leveling-tracker.html">Speed Leveling</a></li>
+        <li><a href="offline-mode.html">Offline Mode</a></li>
+      </ul>
+    </div>
+    <div class="dropdown dropdown-hover">
+      <div tabindex="0" role="button" class="btn btn-ghost">Diablo IV</div>
+      <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 z-[100]">
+        <li><a href="dungeons.html">Dungeons</a></li>
+        <li><a href="sigils.html">Sigils</a></li>
+      </ul>
+    </div>
   </div>
   <div class="navbar-end">
     <a href="settings.html" class="btn btn-ghost">Settings</a>
