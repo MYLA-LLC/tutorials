@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dIVa Tutorial - Patch Version 1.0.0</title>
+    <title>dIVa - aRPG Analytics Tool</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,11 +12,11 @@
     <div class="container mx-auto p-4">
       <div class="text-center my-8">
         <img src="images/dIVa.png" alt="dIVa Logo" class="mx-auto" />
-        <h1 class="text-primary text-4xl sm:text-5xl font-bold">Diablo Accessories</h1>
-        <div class="text-lg sm:text-xl italic w-full sm:w-4/5 mx-auto my-4">
-          Elevate your Diablo experience with real-time statistics on Gold, Experience, and Speed Leveling! Designed for true enthusiasts, dIVa helps
-          you discover the most resource-efficient quests, dungeons, and playstyles. Enjoy in-game overlays with up-to-the-minute updates, ensuring
-          you maximize your efficiency while slaying demons. Gear up and conquer Sanctuary with dIVa!
+        <div class="text-lg text-primary sm:text-xl italic w-full sm:w-4/5 mx-auto my-4">
+          Elevate your aRPG experience with real-time statistics on Gold, Experience, and Speed Leveling!<br />
+          Designed for true enthusiasts, dIVa helps you discover the most resource-efficient gameplay across multiple aRPGs.<br />
+          Enjoy in-game overlays with up-to-the-minute updates, ensuring you maximize your efficiency while gaming.<br />
+          Gear up and conquer your favorite aRPGs with dIVa!
         </div>
       </div>
       <div id="nav-placeholder"></div>
@@ -27,6 +27,40 @@
             document.getElementById("nav-placeholder").innerHTML = data;
           });
       </script>
+      <div id="patch-1-2-0" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">v1.2.0 - Theme Revolution</h2>
+          <p class="mb-2">Experience dIVa in a whole new light with our latest update!</p>
+          <div>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Theme System</h3>
+            <ul class="list-disc list-inside ml-4 p-4 pt-2">
+              <li>
+                <strong>Game-Specific Themes:</strong> Each supported game now has its own unique theme, bringing the perfect ambiance to your
+                analytics:
+                <ul class="list-disc list-inside ml-4">
+                  <li><strong>dIVa:</strong> The default theme, fiery orange and red darkness</li>
+                  <li><strong>Vessel of Hatred:</strong> Embrace the new jungle green aesthetics with our Diablo IV expansion theme</li>
+                  <li><strong>Path of Exile:</strong> Experience the gritty midnight blue atmosphere of Wraeclast</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Dynamic Theme Switching:</strong> Themes automatically adjust based on your active game, or manually select your preferred
+                theme in settings
+              </li>
+              <li><strong>Enhanced Visuals:</strong> Revamped UI elements, icons, and color schemes to match each game's unique aesthetic</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Offline Support for Path of Exile 2</h3>
+            <ul class="list-disc list-inside ml-4 p-4 pt-2">
+              <li>
+                <strong>Offline Mode:</strong> The application now supports offline mode for Path of Exile 2, allowing you to manage your characters
+                and the Speed Leveling Tracker while Overwolf game events are in development.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div id="patch-1-0-0" class="card bg-neutral shadow-lg compact my-8 section-offset">
         <div class="card-body">
           <h2 class="card-title text-accent text-xl sm:text-2xl">v1.0.0 - Vessel of Hatred</h2>

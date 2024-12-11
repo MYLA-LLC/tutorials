@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Offline Mode - dIVa Tutorial</title>
+    <title>Offline Mode - dIVa</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,13 +22,13 @@
         <div class="card-body">
           <h2 class="card-title text-accent text-xl sm:text-2xl">Offline Mode</h2>
           <p class="mb-4">
-            Introducing the new "Offline Mode" feature, allowing you to manage Characters and the Speed Leveling Tracker even when Overwolf game
-            events are unavailable!
+            The "Offline Mode" feature allows you to manage Characters and track Speed Leveling progress even when game events are unavailable or not
+            yet supported!
           </p>
           <p class="mb-4">
-            In the "Characters" screen, after adding a Character, it will automatically be marked as "offline." Previously, if the events were down,
-            tracking your leveling progress wasn't possible. Now, with Offline Mode, we've introduced the ability to manually complete milestones
-            every 10 levels, providing a balanced solution that allows you to keep track of your progress without needing to click for every level.
+            Perfect for games in beta (like, Path of Exile 2) or when game integration is temporarily unavailable.<br />
+            Characters marked as "offline" can manually track leveling milestones every 10 levels, providing a balanced solution that lets you monitor
+            progress without excessive manual intervention.
           </p>
           <h3 class="text-secondary text-lg sm:text-xl font-semibold">How to Use Offline Mode</h3>
           <ol class="list-decimal pl-5 mb-4">
@@ -37,7 +37,7 @@
               <a href="characters.html#add-characters" class="text-accent underline">Characters</a> section.
             </li>
             <li class="mb-2">
-              This will automatically activate your new Character in 'Offline Mode', but you can also click the 'Offline' icon in the future
+              Your new Character will automatically be set to 'Offline Mode', identifiable by the offline icon:
               <button class="btn btn-sm btn-outline btn-accent">
                 <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -49,7 +49,7 @@
               </button>
             </li>
             <li class="mb-2">
-              Offline leveling must be started on the Desktop screen, and it will require a long press of 2 seconds on the 'Start' button.
+              Start tracking from the Desktop screen with a 2-second long press on the 'Start' button.
               <ul class="list-disc pl-5">
                 <li class="mb-2">
                   Please note that starting offline leveling will flag your character, making it ineligible for the "Best Run" tracker, but you will
@@ -58,15 +58,31 @@
               </ul>
             </li>
             <li class="mb-2">
-              Track your leveling milestones. For every 10 levels, you can manually update your progress.
+              Track your leveling progress by manually updating milestones every 10 levels.
               <img src="images/leveling-overlay-offline.png" alt="Leveling Overlay Offline" class="my-4 mx-auto rounded-lg" />
             </li>
-            <li class="mb-2">
-              Once the Overwolf events are back online, simply log into Diablo with your Character selected, and dIVa will automatically merge
-              tracking with the Speed Leveling Tracker.
+            <li>
+              When game integration becomes available for your game, simply log in with your Character selected, and dIVa will automatically
+              transition to online tracking.
             </li>
           </ol>
-          <h3 class="text-secondary text-lg sm:text-xl font-semibold text-center">Video Overview</h3>
+          <div class="alert alert-info shadow-lg my-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <h3 class="font-bold">Path of Exile 2 (Beta) Support</h3>
+              <p class="text-sm">
+                Please be aware that Overwolf PoE2 Game Events are in development & automatic speed leveling tracker is currently unavailable.
+              </p>
+            </div>
+          </div>
+          <h3 class="text-secondary text-lg sm:text-xl font-semibold text-center">Original Video Overview</h3>
           <div class="flex justify-center mb-4">
             <iframe
               width="560"

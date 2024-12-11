@@ -1,11 +1,63 @@
-<nav class="sticky-nav bg-neutral flex flex-wrap justify-center mb-8 py-4 shadow-md">
-  <a href="index.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Home</a>
-  <a href="desktop.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Desktop</a>
-  <a href="characters.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Characters</a>
-  <a href="meters.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Meters</a>
-  <a href="speed-leveling-tracker.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Speed Leveling Tracker</a>
-  <a href="dungeons.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Dungeons</a>
-  <a href="sigils.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Sigils</a>
-  <a href="settings.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Settings</a>
-  <a href="offline-mode.html" class="btn btn-secondary btn-outline m-2 text-xs sm:text-sm">Offline Mode</a>
-</nav>
+<div class="navbar bg-base-100 rounded-box shadow-lg mb-4">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <!-- Mobile menu items -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="desktop.html">Desktop</a></li>
+        <li>
+          <a>Features</a>
+          <ul class="p-2">
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="meters.html">Meters</a></li>
+            <li><a href="speed-leveling-tracker.html">Speed Leveling</a></li>
+            <li><a href="offline-mode.html">Offline Mode</a></li>
+          </ul>
+        </li>
+        <li>
+          <a>Diablo IV</a>
+          <ul class="p-2">
+            <li><a href="dungeons.html">Dungeons</a></li>
+            <li><a href="sigils.html">Sigils</a></li>
+          </ul>
+        </li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </div>
+    <a href="index.html" class="btn btn-ghost normal-case text-xl">dIVa</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <!-- Desktop menu items -->
+      <li><a href="desktop.html">Desktop</a></li>
+      <li class="dropdown dropdown-hover">
+        <details class="dropdown">
+          <summary>Features</summary>
+          <ul class="dropdown-content z-[100] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="meters.html">Meters</a></li>
+            <li><a href="speed-leveling-tracker.html">Speed Leveling Tracker</a></li>
+            <li><a href="offline-mode.html">Offline Mode</a></li>
+          </ul>
+        </details>
+      </li>
+      <li class="dropdown dropdown-hover">
+        <details class="dropdown">
+          <summary>Diablo IV</summary>
+          <ul class="dropdown-content z-[100] menu p-2 shadow bg-base-100 rounded-box w-52 mt-4">
+            <li><a href="dungeons.html">Dungeons</a></li>
+            <li><a href="sigils.html">Sigils</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="settings.html" class="btn btn-ghost">Settings</a>
+  </div>
+</div>
