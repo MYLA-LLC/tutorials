@@ -16,6 +16,9 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="desktop"]`).forEach((element) => {
+              element.classList.add("btn-active");
+            });
           });
       </script>
       <div id="desktop" class="card bg-neutral shadow-lg compact my-8 section-offset">
@@ -32,8 +35,28 @@
             </ul>
           </div>
           <p class="mb-4">Screenshot of the Desktop window.</p>
-          <img src="images/desktop.png" alt="Desktop window" class="mb-4 mx-auto rounded-lg" />
-          <img src="images/desktop-full.png" alt="Full Desktop" class="mb-4 mx-auto rounded-lg" />
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="images/desktop-full-d4.png" alt="Diablo IV Desktop" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Diablo IV Desktop</h3>
+                <p class="text-sm">Full desktop view with Vessel of Hatred theme</p>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="images/desktop-full-poe2.png" alt="Path of Exile 2 Desktop" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Path of Exile 2 Desktop</h3>
+                <p class="text-sm">Full desktop view with Path of Exile theme</p>
+              </div>
+            </div>
+          </div>
+
           <div>
             <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
             <ul class="list-disc list-inside ml-4 p-4">

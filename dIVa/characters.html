@@ -16,6 +16,13 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="characters"]`).forEach((element) => {
+              element.classList.add("btn-active");
+              const dropdownButton = element.closest(".dropdown")?.querySelector(".btn");
+              if (dropdownButton) {
+                dropdownButton.classList.add("btn-active");
+              }
+            });
           });
       </script>
       <div id="characters" class="card bg-neutral shadow-lg compact my-8 section-offset">

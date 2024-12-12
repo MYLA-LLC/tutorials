@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dIVa - aRPG Analytics Tool</title>
+    <title>dIVa</title>
+    <meta
+      name="description"
+      content="dIVa is an aRPG analytics tool that helps you track your progress in Diablo IV, Diablo II: Resurrected, and Path of Exile 2."
+    />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -25,11 +29,14 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="index"]`).forEach((element) => {
+              element.classList.add("btn-active");
+            });
           });
       </script>
       <div id="patch-1-2-0" class="card bg-neutral shadow-lg compact my-8 section-offset">
         <div class="card-body">
-          <h2 class="card-title text-accent text-xl sm:text-2xl">v1.2.0 - Theme Revolution</h2>
+          <h2 class="card-title text-accent text-xl sm:text-2xl">(Upcoming) v1.2.0 - Theme Revolution</h2>
           <p class="mb-2">Experience dIVa in a whole new light with our latest update!</p>
           <div>
             <h3 class="text-secondary text-lg sm:text-xl font-semibold">Theme System</h3>
@@ -45,7 +52,7 @@
               </li>
               <li>
                 <strong>Dynamic Theme Switching:</strong> Themes automatically adjust based on your active game, or manually select your preferred
-                theme in settings
+                theme in <a href="settings.html#themes" class="text-accent underline">Settings</a>
               </li>
               <li><strong>Enhanced Visuals:</strong> Revamped UI elements, icons, and color schemes to match each game's unique aesthetic</li>
             </ul>

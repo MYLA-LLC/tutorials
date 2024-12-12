@@ -16,20 +16,23 @@
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="settings"]`).forEach((element) => {
+              element.classList.add("btn-active");
+            });
           });
       </script>
       <div id="settings" class="card bg-neutral shadow-lg compact my-8 section-offset">
         <div class="card-body">
           <h2 class="card-title text-accent text-xl sm:text-2xl">Settings</h2>
           <p class="mb-4">Screenshot of the Settings window.</p>
-          <img src="images/settings.png" alt="Settings" class="mb-4 mx-auto rounded-lg" />
+          <img src="images/settings/settings.png" alt="Settings" class="mb-4 mx-auto rounded-lg" />
           <div class="mt-4">
             <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
             <p>
               The settings screen dynamically adjusts based on the game you are logged into. Here’s a breakdown of the functionality for managing
               settings across different games like Diablo II or Diablo IV:
             </p>
-            <ul class="list-disc ml-4 p-4 space-y-1">
+            <ul class="list-disc ml-4 p-4 pt-2 space-y-1">
               <li>
                 <strong>User Tutorial:</strong>
                 <p>Click the tutorial link to access this step-by-step guide on how to use the dIVa application and its features.</p>
@@ -66,31 +69,63 @@
                 <strong>Language:</strong>
                 <p>Select your preferred language from the available options.</p>
               </li>
-              <li>
-                <strong>Theme:</strong>
-                <p>Customize your dIVa experience with game-specific themes that match your favorite aRPG:</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                  <div class="card bg-base-200">
-                    <figure class="px-4 pt-4">
-                      <img src="images/settings-theme-voh.png" alt="Vessel of Hatred Theme" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body p-4">
-                      <h3 class="card-title text-sm">Vessel of Hatred Theme</h3>
-                      <p class="text-sm">Diablo IV's dark and brooding aesthetic</p>
-                    </div>
-                  </div>
-                  <div class="card bg-base-200">
-                    <figure class="px-4 pt-4">
-                      <img src="images/settings-theme-poe.png" alt="Path of Exile Theme" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body p-4">
-                      <h3 class="card-title text-sm">Path of Exile Theme</h3>
-                      <p class="text-sm">Wraeclast's gritty and atmospheric style</p>
-                    </div>
-                  </div>
-                </div>
-              </li>
             </ul>
+          </div>
+
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Themes</h3>
+            <p>Customize your dIVa experience with game-specific themes that match your favorite aRPG:</p>
+            <ul class="list-disc ml-4 p-4 pt-2 space-y-1">
+              <li>
+                <strong>Dynamic Theme Switching:</strong> Themes automatically adjust based on your active game, or manually select your preferred
+                theme in the settings below
+              </li>
+              <li>
+                <strong>Game-Specific Themes:</strong> Each supported game now has its own unique theme, bringing the perfect ambiance to your
+                analytics:
+                <ul class="list-inside ml-4 space-y-1">
+                  <li>
+                    <strong>dIVa:</strong> The default theme, fiery orange and red darkness
+                    <ul class="list-disc list-inside ml-8">
+                      <li>Active for Diablo II: Resurrected</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Vessel of Hatred:</strong> Embrace the new jungle green aesthetics with our Diablo IV expansion theme
+                    <ul class="list-disc list-inside ml-8">
+                      <li>Active for Diablo IV</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <strong>Path of Exile:</strong> Experience the gritty midnight blue atmosphere of Wraeclast
+                    <ul class="list-disc list-inside ml-8">
+                      <li>Active for Path of Exile 2</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Enhanced Visuals:</strong> Revamped UI elements, icons, and color schemes to match each game's unique aesthetic</li>
+            </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+              <div class="card bg-base-200">
+                <figure class="px-4 pt-4">
+                  <img src="images/settings/settings-theme-voh.png" alt="Vessel of Hatred Theme" class="rounded-xl" />
+                </figure>
+                <div class="card-body p-4">
+                  <h3 class="card-title text-sm">Vessel of Hatred Theme</h3>
+                  <p class="text-sm">Diablo IV's dark and brooding aesthetic</p>
+                </div>
+              </div>
+              <div class="card bg-base-200">
+                <figure class="px-4 pt-4">
+                  <img src="images/settings/settings-theme-poe.png" alt="Path of Exile Theme" class="rounded-xl" />
+                </figure>
+                <div class="card-body p-4">
+                  <h3 class="card-title text-sm">Path of Exile Theme</h3>
+                  <p class="text-sm">Wraeclast's gritty and atmospheric style</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
