@@ -13,7 +13,7 @@ A dynamic interface with visual analytics, dIVa elevates your aRPG journey with 
 - Diablo II: Resurrected
 - Path of Exile 2
 
-## (Latest Features) v1.3.0 - Path of Exile 2 & Themes
+## (Latest Features) v1.3.5 - Path of Exile 2 & Themes
 
 Experience dIVa in a whole new light with our latest update!
 
@@ -21,6 +21,7 @@ Experience dIVa in a whole new light with our latest update!
 
 - **Character Detection:** Introducing a specialized class detection system for Path of Exile 2 characters.
 - When you log in, dIVa will prompt you to select your character's class, and will remember it for future sessions, ensuring accurate character tracking and analytics while Overwolf game events are in development.
+- **Experience Meter Enabled:** Experience Game Event is now supported in Overwolf
 
 ### Theme System
 
