@@ -13,7 +13,7 @@ A dynamic interface with visual analytics, dIVa elevates your aRPG journey with 
 - Diablo II: Resurrected
 - Path of Exile 2
 
-## (Latest Features) v1.3.5 - Path of Exile 2 & Themes
+## (Latest Features) v1.3.6 - Path of Exile 2 & Themes
 
 Experience dIVa in a whole new light with our latest update!
 
@@ -31,6 +31,9 @@ Experience dIVa in a whole new light with our latest update!
   - **Path of Exile:** Experience the gritty midnight blue atmosphere of Wraeclast
 - **Dynamic Theme Switching:** Themes automatically adjust based on your active game, or manually select your preferred theme in [Settings](settings.html#themes)
 - **Enhanced Visuals:** Revamped UI elements, icons, and color schemes to match each game's unique aesthetic
+
+### Enhancements
+- **Draggable Indicator on Overlays**
 
 Visit our [User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html), or see the introduction video on [YouTube](https://youtu.be/9ZPsBgi1_M8)!
 
