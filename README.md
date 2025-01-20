@@ -18,11 +18,10 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 - Español
 - Português
 
-## (Latest Features) Path of Exile 2 & Themes
+## (Latest Features) **Diablo IV: Season of Witchcraft Update**
+Updated Dungeon data for Season 7
 
-Experience dIVa in a whole new light with our latest update!
-
-### Support for Path of Exile 2 (Early Access)
+### Path of Exile 2 (Early Access)
 
 - **Character Detection:** Introducing a specialized class detection system for Path of Exile 2 characters.
 - When you log in, dIVa will prompt you to select your character's class, and will remember it for future sessions, ensuring accurate character tracking and analytics while Overwolf game events are in development.
