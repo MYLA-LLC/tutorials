@@ -20,14 +20,18 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 - Español
 - Português
 
-## (Latest Features) Expanded Language Support
-I'm thrilled to share that dIVa has surpassed 1,000 daily users!
-As a token of appreciation for this incredible community, I'm expanding the language support to include German and Korean — two of the most active user groups in the app.
-Thank you for being part of this journey!
+## (Latest Features) Path of Exile 2: Dawn of the Hunt Update
+The Huntress class is now supported in dIVa
 
 ### Discord
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
+
+### Expanded Language Support
+I'm thrilled to share that dIVa has surpassed 1,000 daily users!
+As a token of appreciation for this incredible community, I'm expanding the language support to include German and Korean — two of the most active user groups in the app.
+Thank you for being part of this journey!
+
 
 ### Diablo IV: Season of Witchcraft Update
 Updated Dungeon data for Season 7
