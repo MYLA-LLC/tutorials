@@ -1,3 +1,17 @@
+<script>
+  const getBasePath = () => {
+    const path = window.location.pathname;
+    const depth = (path.match(/\//g) || []).length - 2;
+    return depth > 0 ? "../".repeat(depth) : "./";
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const basePath = getBasePath();
+    document.querySelectorAll('a[href^="/dIVa/"]').forEach((link) => {
+      link.href = link.href.replace("/dIVa/", basePath);
+    });
+  });
+</script>
 <div class="navbar bg-base-100 rounded-box shadow-lg mb-4">
   <div class="navbar-start">
     <div class="dropdown">
