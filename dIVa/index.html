@@ -9,7 +9,7 @@
       content="dIVa is an aRPG analytics tool that helps you track your progress in Diablo IV, Diablo II: Resurrected, and Path of Exile 2."
     />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
+    <link rel="stylesheet" href="assets/dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -26,7 +26,7 @@
       </div>
       <div id="nav-placeholder"></div>
       <script>
-        fetch("/dIVa/assets/nav.html")
+        fetch("assets/nav.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
