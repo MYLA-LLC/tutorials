@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigils - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("/dIVa/assets/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="sigils"]`).forEach((element) => {
+              element.classList.add("btn-active");
+              const dropdownButton = element.closest(".dropdown")?.querySelector(".btn");
+              if (dropdownButton) {
+                dropdownButton.classList.add("btn-active");
+              }
+            });
+          });
+      </script>
+      <div id="sigils" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Sigils</h2>
+          <p class="mb-4">
+            The Inventory feature in dIVa provides a comprehensive inventory management system for your Sigils. This feature helps you organize,
+            track, and optimize your sigil collection across different views.
+          </p>
+          <div>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
+            <ul class="list-disc list-inside ml-4 p-4 space-y-1">
+              <li><strong>Best Sigils:</strong> Displays your Best Sigil available with a quick manual CONSUME action.</li>
+              <li><strong>Views:</strong> View all your Sigils in a compact grid views, or a detailed list view.</li>
+              <li><strong>Overlay:</strong> In-game Overlay to display your Best Sigil available.</li>
+              <li><strong>Analyze Filter:</strong> Analyze your Sigils based on the Tier Type selected.</li>
+              <li><strong>Season Filter:</strong> View sigils specific to the current season.</li>
+              <li><strong>Search:</strong> Quickly find specific sigils using the search bar.</li>
+              <li><strong>Sort Options:</strong> Organize sigils based on different criteria (e.g., Act, Alphabetical, Count).</li>
+              <li><strong>Settings:</strong> Configure settings for your Inventory.</li>
+              <li><strong>Tier Coloring:</strong> Sigils are color-coded based on their tier (e.g., S-Tier, A-Tier, everything else).</li>
+              <li>
+                <strong>Consume:</strong> Use sigils directly from the inventory.
+                <ul class="list-disc list-inside ml-4">
+                  <li>For multiple sigils of the same type, a number will be displayed instead.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Add:</strong> Manually add sigils to your inventory.
+                <ul class="list-disc list-inside ml-4">
+                  <li>For sigils with an <strong>Affix</strong>, hold down the "+" button to access the Affix menu options.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-accent text-lg sm:text-xl font-semibold">Views</h3>
+            <h4 class="text-secondary text-md sm:text-lg font-semibold mt-2">Stash View</h4>
+            <img src="../images/sigils-stash.png" alt="Sigils Stash View" class="mb-4 mx-auto rounded-lg" />
+            <p class="mb-2">The Stash view provides a grid-based overview of all your sigils, allowing for quick management and organization.</p>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Sigil Grid:</strong> Displays all your sigils in a compact, easy-to-view format.</li>
+              <li><strong>Sigil Icons:</strong> Visual representations of each sigil type.</li>
+              <li><strong>Quantity Indicator:</strong> Shows the number of sigils you have for each type.</li>
+              <li><strong>Quick Actions:</strong> Buttons to consume, list, or add sigils directly from the grid view.</li>
+            </ul>
+            <img src="../images/sigils-list-modal.png" alt="Sigil (Dungeon List)" class="mb-2 mx-auto rounded-lg w-1/2" />
+            <h4 class="text-secondary text-md sm:text-lg font-semibold">Best View</h4>
+            <img src="../images/sigils-best.png" alt="Sigils Best View" class="mb-4 mx-auto rounded-lg" />
+            <p class="mb-2">The Best view focuses on optimizing your sigil inventory, showcasing the most effective sigils in your collection.</p>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li>
+                <strong>Recommended Sigils:</strong> This view will only show <strong>S-Tier</strong> or <strong>A-Tier</strong> Sigils for both
+                experience and glyph.
+              </li>
+            </ul>
+            <h4 class="text-secondary text-md sm:text-lg font-semibold">List View</h4>
+            <img src="../images/sigils-list.png" alt="Sigils List View" class="mb-4 mx-auto rounded-lg" />
+            <p class="mb-2">The List view provides a detailed, linear display of your sigils, allowing for easy management and consumption.</p>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Detailed Information:</strong> Shows the name, tier, and affix (if applicable) for each sigil.</li>
+              <li><strong>Quick Consumption:</strong> Easily consume individual sigils with a single click.</li>
+              <li><strong>Bulk Actions:</strong> Delete ALL Sigils.</li>
+              <li><strong>Color-coded Tiers:</strong> Sigils are color-coded based on their tier for easy identification.</li>
+            </ul>
+            <h3 class="text-accent text-lg sm:text-xl font-semibold mt-6">Settings</h3>
+            <img src="../images/sigils-settings.png" alt="Sigils Settings" class="mb-4 mx-auto rounded-lg" />
+            <p class="mb-2">The Settings feature allows you to customize your sigil inventory experience and optimize its functionality.</p>
+            <ul class="list-disc list-inside ml-4 p-4">
+              <li><strong>Auto Best Sigil Consume:</strong> Automatically consume the best sigil when activated.</li>
+              <li><strong>Hide Low Tier:</strong> Option to hide lower-tier sigils for a cleaner inventory view.</li>
+              <li><strong>Bring Inventory to Front:</strong> Brings the inventory window to the front on auto-consume.</li>
+              <li><strong>Hide Empty:</strong> Hide empty sigil slots to focus on available sigils.</li>
+              <li><strong>Preserve Bonus Sigils:</strong> Protect sigils with bonus affixes from bulk deletion.</li>
+              <li><strong>Affixes Rating Adjustment:</strong> Fine-tune the rating of specific affixes to customize sigil evaluation.</li>
+            </ul>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Using the Sigil Views</h3>
+            <ol class="list-decimal list-inside ml-4 p-2 space-y-2">
+              <li>Open the Sigils window in dIVa and select either the "Stash" or "Best" tab.</li>
+              <li>Use the search bar to find specific sigils or browse the available options.</li>
+              <li>Click on the "Analyze" icon to select the Tier Type to analyze Sigils for.</li>
+              <li>Use the "Season" dropdown to view sigils relevant to the current season.</li>
+              <li>
+                To consume a sigil, click the checkmark button. For multiple sigils of the same type, a count will be displayed instead. Clicking this
+                will bring you to a List view for that Sigil type.
+              </li>
+              <li>To add a sigil to your inventory, click the "+" button.</li>
+              <li>For sigils with affixes, hold down the "+" button to access the affix management options.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

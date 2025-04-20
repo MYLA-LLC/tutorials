@@ -9,7 +9,7 @@
       content="dIVa is an aRPG analytics tool that helps you track your progress in Diablo IV, Diablo II: Resurrected, and Path of Exile 2."
     />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="dIVa-guide.css" />
+    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -26,7 +26,7 @@
       </div>
       <div id="nav-placeholder"></div>
       <script>
-        fetch("nav.html")
+        fetch("/dIVa/assets/nav.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
@@ -35,6 +35,29 @@
             });
           });
       </script>
+      <div id="patch-2-0-0" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">(Upcoming) dIVa v2</h2>
+          <div>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Major UI Overhaul</h3>
+            <ul class="list-disc list-inside ml-4 p-4 pt-2">
+              <li>Complete GUI redesign with unified single-window interface and Sidebar navigation</li>
+              <li>
+                Settings toggle "Open Features Window" option allows specific features to be opened in a separate window. Currently available for
+                Diablo IV Dungeons & Sigils
+              </li>
+              <li>Game Selector in top bar enables offline viewing and switching between different supported games</li>
+            </ul>
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold">Path of Exile 2 Feature</h3>
+            <ul class="list-disc list-inside ml-4 p-4 pt-2">
+              <li>
+                New <a href="poe2/instance-alert.html" class="text-accent underline">Instance Alert</a> feature warns when town instances are at risk
+                of expiring (8-minute threshold)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div id="patch-1-7-5" class="card bg-neutral shadow-lg compact my-8 section-offset">
         <div class="card-body">
           <h2 class="card-title text-accent text-xl sm:text-2xl">v1.7.5 - Path of Exile 2 Dawn of the Hunt Update</h2>

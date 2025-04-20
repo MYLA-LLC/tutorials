@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instance Alert - dIVa</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("/dIVa/assets/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="instance-alert"]`).forEach((element) => {
+              element.classList.add("btn-active");
+              const dropdownButton = element.closest(".dropdown")?.querySelector(".btn");
+              if (dropdownButton) {
+                dropdownButton.classList.add("btn-active");
+              }
+            });
+          });
+      </script>
+      <div id="instance-alert" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Instance Alert</h2>
+          <p class="mb-4">
+            The "Instance Alert" feature helps you track instance timers with audio-visual notifications, ensuring you don't lose progress by staying
+            too long in town.
+          </p>
+          <p class="mb-4">The alert system provides both visual and audio cues as you approach the instance timeout.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="../images/instance-alert/instance-alert.png" alt="Instance Alert" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Instance Alert (Desktop)</h3>
+                <p class="text-sm">The Instance Alert feature can be opened on the desktop or as an overlay in-game.</p>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="../images/instance-alert/instance-alert-danger.png" alt="Instance Alert Danger" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Instance Alert (Expired)</h3>
+                <p class="text-sm">The Instance Alert will flash when the timer has expired and the instance is at risk of being lost.</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="text-secondary text-lg sm:text-xl font-semibold pt-2">How Instance Alert Works</h3>
+          <ol class="list-decimal pl-5 mb-2">
+            <li class="mb-2">
+              The timer starts automatically when entering town.
+              <ul class="list-disc pl-5">
+                <li class="mb-2">Default timer duration is 8 minutes (per Game Tip, instances last 8-15 minutes in Path of Exile 2)</li>
+                <li class="mb-2">Countdown begins at 30 seconds remaining</li>
+                <li class="mb-2">The timer is reset when zoning back into the instance (e.g. taking town portal back out)</li>
+              </ul>
+            </li>
+            <li class="mb-2">
+              Visual and Audio Alerts:
+              <ul class="list-disc pl-5">
+                <li>A countdown sound plays during the final 30 seconds</li>
+                <li>This can be silenced using the mute button if needed, but the timer will keep running</li>
+                <li>An alarm triggers when time runs out</li>
+                <li>The timer display flashes after, indicating the instance is at risk of expiring</li>
+                <li>The timer can be reset at this point, and the countdown will restart next time you enter town</li>
+              </ul>
+            </li>
+            <li class="mb-2">
+              Control Options:
+              <div class="flex flex-row gap-4 my-2">
+                <div class="flex items-center gap-2">
+                  <button class="btn btn-sm btn-secondary">
+                    <svg class="size-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M10.047 3.062a.75.75 0 0 1 .453.688v12.5a.75.75 0 0 1-1.264.546L5.203 13H2.667a.75.75 0 0 1-.7-.48A6.985 6.985 0 0 1 1.5 10c0-.887.165-1.737.468-2.52a.75.75 0 0 1 .7-.48h2.535l4.033-3.796a.75.75 0 0 1 .811-.142ZM13.78 7.22a.75.75 0 1 0-1.06 1.06L14.44 10l-1.72 1.72a.75.75 0 0 0 1.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 1 0 1.06-1.06L16.56 10l1.72-1.72a.75.75 0 0 0-1.06-1.06L15.5 8.94l-1.72-1.72Z"
+                      />
+                    </svg>
+                  </button>
+                  Mute countdown sound
+                </div>
+                <div class="flex items-center gap-2">
+                  <button class="btn btn-sm btn-warning btn-outline">
+                    <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M4.5 7.5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-9a3 3 0 0 1-3-3v-9Z" />
+                    </svg>
+                  </button>
+                  Stop alarm
+                </div>
+              </div>
+            </li>
+            <li class="mb-2">
+              Overlay Mode:
+              <ul class="list-disc pl-5">
+                <li>Compact, draggable overlay for in-game visibility</li>
+                <li>Automatically expands & collapses, but can be manually locked to stay open</li>
+                <li>Toggle between automatic and manual modes</li>
+              </ul>
+            </li>
+          </ol>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="../images/instance-alert/ia-expanded.png" alt="Overlay Expanded" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Overlay (Expanded)</h3>
+                <p class="text-sm">The Instance Alert overlay can be locked to show the timer and controls at all times.</p>
+              </div>
+            </div>
+            <div class="card bg-base-200">
+              <figure class="px-4 pt-4">
+                <img src="../images/instance-alert/ia-automatic.png" alt="Overlay Automatic" class="rounded-xl" />
+              </figure>
+              <div class="card-body p-4">
+                <h3 class="card-title text-sm">Overlay (Automatic)</h3>
+                <p class="text-sm">The Instance Alert overlay will automatically expand and collapse when entering and leaving town.</p>
+              </div>
+            </div>
+          </div>
+          <div class="alert alert-info shadow-lg my-4">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            </svg>
+            <div>
+              <h3 class="font-bold">Monitoring Toggle</h3>
+              <p class="text-sm mb-2">Use the monitoring toggle to enable/disable town tracking</p>
+              <h3 class="font-bold">Overlay Toggle</h3>
+              <p class="text-sm">Enable overlay in Settings, along with the other Meter Overlays</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
