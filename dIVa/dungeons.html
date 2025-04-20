@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dungeons - dIVa Tutorial</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
+    <link rel="stylesheet" href="./assets/dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="container mx-auto p-4">
       <div id="nav-placeholder"></div>
       <script>
-        fetch("/dIVa/assets/nav.html")
+        fetch("./assets/nav.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
@@ -32,7 +32,7 @@
             The Dungeons feature in dIVa provides a comprehensive Tier List of Nightmare Dungeons, helping you optimize your gameplay for experience
             and glyph upgrading.
           </p>
-          <img src="../images/dungeons.png" alt="Dungeons Tier List" class="mb-4 mx-auto rounded-lg" />
+          <img src="images/dungeons.png" alt="Dungeons Tier List" class="mb-4 mx-auto rounded-lg" />
           <div class="mt-4">
             <h3 class="text-secondary text-lg sm:text-xl font-semibold">Functionality</h3>
             <ul class="list-disc list-inside ml-4 p-4">

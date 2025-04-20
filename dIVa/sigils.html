@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sigils - dIVa Tutorial</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/dIVa/assets/dIVa-guide.css" />
+    <link rel="stylesheet" href="./assets/dIVa-guide.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <div class="container mx-auto p-4">
       <div id="nav-placeholder"></div>
       <script>
-        fetch("/dIVa/assets/nav.html")
+        fetch("./assets/nav.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("nav-placeholder").innerHTML = data;
@@ -61,7 +61,7 @@
           <div>
             <h3 class="text-accent text-lg sm:text-xl font-semibold">Views</h3>
             <h4 class="text-secondary text-md sm:text-lg font-semibold mt-2">Stash View</h4>
-            <img src="../images/sigils-stash.png" alt="Sigils Stash View" class="mb-4 mx-auto rounded-lg" />
+            <img src="./images/sigils-stash.png" alt="Sigils Stash View" class="mb-4 mx-auto rounded-lg" />
             <p class="mb-2">The Stash view provides a grid-based overview of all your sigils, allowing for quick management and organization.</p>
             <ul class="list-disc list-inside ml-4 p-4">
               <li><strong>Sigil Grid:</strong> Displays all your sigils in a compact, easy-to-view format.</li>
@@ -69,9 +69,9 @@
               <li><strong>Quantity Indicator:</strong> Shows the number of sigils you have for each type.</li>
               <li><strong>Quick Actions:</strong> Buttons to consume, list, or add sigils directly from the grid view.</li>
             </ul>
-            <img src="../images/sigils-list-modal.png" alt="Sigil (Dungeon List)" class="mb-2 mx-auto rounded-lg w-1/2" />
+            <img src="./images/sigils-list-modal.png" alt="Sigil (Dungeon List)" class="mb-2 mx-auto rounded-lg w-1/2" />
             <h4 class="text-secondary text-md sm:text-lg font-semibold">Best View</h4>
-            <img src="../images/sigils-best.png" alt="Sigils Best View" class="mb-4 mx-auto rounded-lg" />
+            <img src="./images/sigils-best.png" alt="Sigils Best View" class="mb-4 mx-auto rounded-lg" />
             <p class="mb-2">The Best view focuses on optimizing your sigil inventory, showcasing the most effective sigils in your collection.</p>
             <ul class="list-disc list-inside ml-4 p-4">
               <li>
@@ -80,7 +80,7 @@
               </li>
             </ul>
             <h4 class="text-secondary text-md sm:text-lg font-semibold">List View</h4>
-            <img src="../images/sigils-list.png" alt="Sigils List View" class="mb-4 mx-auto rounded-lg" />
+            <img src="./images/sigils-list.png" alt="Sigils List View" class="mb-4 mx-auto rounded-lg" />
             <p class="mb-2">The List view provides a detailed, linear display of your sigils, allowing for easy management and consumption.</p>
             <ul class="list-disc list-inside ml-4 p-4">
               <li><strong>Detailed Information:</strong> Shows the name, tier, and affix (if applicable) for each sigil.</li>
@@ -89,7 +89,7 @@
               <li><strong>Color-coded Tiers:</strong> Sigils are color-coded based on their tier for easy identification.</li>
             </ul>
             <h3 class="text-accent text-lg sm:text-xl font-semibold mt-6">Settings</h3>
-            <img src="../images/sigils-settings.png" alt="Sigils Settings" class="mb-4 mx-auto rounded-lg" />
+            <img src="./images/sigils-settings.png" alt="Sigils Settings" class="mb-4 mx-auto rounded-lg" />
             <p class="mb-2">The Settings feature allows you to customize your sigil inventory experience and optimize its functionality.</p>
             <ul class="list-disc list-inside ml-4 p-4">
               <li><strong>Auto Best Sigil Consume:</strong> Automatically consume the best sigil when activated.</li>

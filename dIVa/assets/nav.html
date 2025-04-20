@@ -1,17 +1,3 @@
-<script>
-  const getBasePath = () => {
-    const path = window.location.pathname;
-    const depth = (path.match(/\//g) || []).length - 2;
-    return depth > 0 ? "../".repeat(depth) : "./";
-  };
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const basePath = getBasePath();
-    document.querySelectorAll('a[href^="/dIVa/"]').forEach((link) => {
-      link.href = link.href.replace("/dIVa/", basePath);
-    });
-  });
-</script>
 <div class="navbar bg-base-100 rounded-box shadow-lg mb-4">
   <div class="navbar-start">
     <div class="dropdown">
@@ -22,63 +8,63 @@
       </label>
       <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <!-- Mobile menu items -->
-        <li><a href="/dIVa/index.html" data-active-page="index">Changelog</a></li>
-        <li><a href="/dIVa/desktop.html" data-active-page="desktop">Desktop</a></li>
+        <li><a href="index.html" data-active-page="index">Changelog</a></li>
+        <li><a href="desktop.html" data-active-page="desktop">Desktop</a></li>
         <li>
           <a data-active-page="features">Features</a>
           <ul class="p-2">
-            <li><a href="/dIVa/characters.html" data-active-page="characters">Characters</a></li>
-            <li><a href="/dIVa/meters.html" data-active-page="meters">Meters</a></li>
-            <li><a href="/dIVa/speed-leveling-tracker.html" data-active-page="speed-leveling">Speed Leveling</a></li>
-            <li><a href="/dIVa/offline-mode.html" data-active-page="offline-mode">Offline Mode</a></li>
+            <li><a href="characters.html" data-active-page="characters">Characters</a></li>
+            <li><a href="meters.html" data-active-page="meters">Meters</a></li>
+            <li><a href="speed-leveling-tracker.html" data-active-page="speed-leveling">Speed Leveling</a></li>
+            <li><a href="offline-mode.html" data-active-page="offline-mode">Offline Mode</a></li>
           </ul>
         </li>
         <li>
           <a data-active-page="diablo">Diablo IV</a>
           <ul class="p-2">
-            <li><a href="/dIVa/d4/dungeons.html" data-active-page="dungeons">Dungeons</a></li>
-            <li><a href="/dIVa/d4/sigils.html" data-active-page="sigils">Sigils</a></li>
+            <li><a href="dungeons.html" data-active-page="dungeons">Dungeons</a></li>
+            <li><a href="sigils.html" data-active-page="sigils">Sigils</a></li>
           </ul>
         </li>
         <li>
           <a data-active-page="poe">Path of Exile 2</a>
           <ul class="p-2">
-            <li><a href="/dIVa/poe2/class-detection.html" data-active-page="class-detection">Class Detection</a></li>
-            <li><a href="/dIVa/poe2/instance-alert.html" data-active-page="instance-alert">Instance Alert</a></li>
+            <li><a href="class-detection.html" data-active-page="class-detection">Class Detection</a></li>
+            <li><a href="instance-alert.html" data-active-page="instance-alert">Instance Alert</a></li>
           </ul>
         </li>
-        <li><a href="/dIVa/settings.html" data-active-page="settings">Settings</a></li>
+        <li><a href="settings.html" data-active-page="settings">Settings</a></li>
       </ul>
     </div>
   </div>
 
   <div class="navbar-center hidden lg:flex gap-2">
-    <a href="/dIVa/index.html" class="btn btn-ghost" data-active-page="index">Changelog</a>
-    <a href="/dIVa/desktop.html" class="btn btn-ghost" data-active-page="desktop">Desktop</a>
+    <a href="index.html" class="btn btn-ghost" data-active-page="index">Changelog</a>
+    <a href="desktop.html" class="btn btn-ghost" data-active-page="desktop">Desktop</a>
     <div class="dropdown dropdown-hover">
       <div tabindex="0" role="button" class="btn btn-ghost" data-active-page="features">Features</div>
       <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 z-[100]">
-        <li><a href="/dIVa/characters.html" data-active-page="characters">Characters</a></li>
-        <li><a href="/dIVa/meters.html" data-active-page="meters">Meters</a></li>
-        <li><a href="/dIVa/speed-leveling-tracker.html" data-active-page="speed-leveling">Speed Leveling</a></li>
-        <li><a href="/dIVa/offline-mode.html" data-active-page="offline-mode">Offline Mode</a></li>
+        <li><a href="characters.html" data-active-page="characters">Characters</a></li>
+        <li><a href="meters.html" data-active-page="meters">Meters</a></li>
+        <li><a href="speed-leveling-tracker.html" data-active-page="speed-leveling">Speed Leveling</a></li>
+        <li><a href="offline-mode.html" data-active-page="offline-mode">Offline Mode</a></li>
       </ul>
     </div>
     <div class="dropdown dropdown-hover">
       <div tabindex="0" role="button" class="btn btn-ghost" data-active-page="diablo">Diablo IV</div>
       <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 z-[100]">
-        <li><a href="/dIVa/d4/dungeons.html" data-active-page="dungeons">Dungeons</a></li>
-        <li><a href="/dIVa/d4/sigils.html" data-active-page="sigils">Sigils</a></li>
+        <li><a href="dungeons.html" data-active-page="dungeons">Dungeons</a></li>
+        <li><a href="sigils.html" data-active-page="sigils">Sigils</a></li>
       </ul>
     </div>
     <div class="dropdown dropdown-hover">
       <div tabindex="0" role="button" class="btn btn-ghost" data-active-page="poe">Path of Exile 2</div>
       <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52 z-[100]">
-        <li><a href="/dIVa/poe2/class-detection.html" data-active-page="class-detection">Class Detection</a></li>
-        <li><a href="/dIVa/poe2/instance-alert.html" data-active-page="instance-alert">Instance Alert</a></li>
+        <li><a href="class-detection.html" data-active-page="class-detection">Class Detection</a></li>
+        <li><a href="instance-alert.html" data-active-page="instance-alert">Instance Alert</a></li>
       </ul>
     </div>
-    <a href="/dIVa/settings.html" class="btn btn-ghost" data-active-page="settings">Settings</a>
+    <a href="settings.html" class="btn btn-ghost" data-active-page="settings">Settings</a>
   </div>
 
   <div class="navbar-end"></div>
