@@ -1,46 +1,50 @@
 ## Tutorials for MYLA Products
 
-# dIVa 
+# dIVa
 
 A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE2, D4 and D2R
 
 [Tutorial](https://myla-llc.github.io/tutorials/dIVa/index.html)
 
-*Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics companion. Discover the most resource-efficient gameplay strategies across multiple games with in-game overlays that provide real-time updates on Gold, Experience, and Speed Leveling. Maximize your efficiency in every gaming session with **dIVa**!*
+_Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics companion. Discover the most resource-efficient gameplay strategies across multiple games with in-game overlays that provide real-time updates on Gold, Experience, and Speed Leveling. Maximize your efficiency in every gaming session with **dIVa**!_
 
 ### Supported Games
+
 - Path of Exile 2 (Early Access)
 - Diablo IV (including Vessel of Hatred expansion)
 - Diablo II: Resurrected
 
 dIVa supports multiple languages, allowing you to enjoy the full experience in your preferred language!
+
 - English
 - Deutsch
 - 한국어
 - Español
 - Português
+- Français
 
-## (Latest Features) Path of Exile 2: Dawn of the Hunt Update
-The Huntress class is now supported in dIVa
+## (Latest Features) dIVa v2
+
+- Complete GUI redesign with unified single-window interface and sidebar navigation
+- Settings toggle allows specific Features to open in a separate window (Diablo IV Dungeons & Sigils)
+- Game Selector in top bar enables offline viewing and switching between supported games
+- New Instance Alert feature for Path of Exile 2
 
 ### Discord
+
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-### Expanded Language Support
-I'm thrilled to share that dIVa has surpassed 1,000 daily users!
-As a token of appreciation for this incredible community, I'm expanding the language support to include German and Korean — two of the most active user groups in the app.
-Thank you for being part of this journey!
+### Diablo IV: Belial's Return
 
+Updated Dungeon data for Season 8
 
-### Diablo IV: Season of Witchcraft Update
-Updated Dungeon data for Season 7
-
-### Path of Exile 2 (Early Access)
+### Path of Exile 2 (Dawn of the Hunt)
 
 - **Character Detection:** Introducing a specialized class detection system for Path of Exile 2 characters.
 - When you log in, dIVa will prompt you to select your character's class, and will remember it for future sessions, ensuring accurate character tracking and analytics while Overwolf game events are in development.
 - **Experience Meter Enabled:** Experience Game Event is now supported in Overwolf
+- **Instance Alert:** Timer for alerting when instances are at risk of expiring during town visits. Available as a Desktop element, or an in-game overlay.
 
 ### Theme System
 
