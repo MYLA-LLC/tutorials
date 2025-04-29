@@ -10,7 +10,7 @@ _Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics compani
 
 ### Supported Games
 
-- Path of Exile 2 (Early Access)
+- Path of Exile 2 (Dawn of the Hunt)
 - Diablo IV (including Vessel of Hatred expansion)
 - Diablo II: Resurrected
 
@@ -55,4 +55,4 @@ Updated Dungeon data for Season 8
 - **Dynamic Theme Switching:** Themes automatically adjust based on your active game, or manually select your preferred theme in [Settings](settings.html#themes)
 - **Enhanced Visuals:** Revamped UI elements, icons, and color schemes to match each game's unique aesthetic
 
-Visit our [User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html), or see the introduction video on [YouTube](https://youtu.be/9ZPsBgi1_M8)!
+Visit our [User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html), or see the introduction video on [YouTube](https://youtu.be/8fhdihZ7iy4)!
