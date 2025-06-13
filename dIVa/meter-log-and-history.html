@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="business">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meter Log & History - dIVa Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/dIVa-guide.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container mx-auto p-4">
+      <div id="nav-placeholder"></div>
+      <script>
+        fetch("assets/nav.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("nav-placeholder").innerHTML = data;
+            document.querySelectorAll(`[data-active-page="meter-log"]`).forEach((element) => {
+              element.classList.add("btn-active");
+              const dropdownButton = element.closest(".dropdown")?.querySelector(".btn");
+              if (dropdownButton) {
+                dropdownButton.classList.add("btn-active");
+              }
+            });
+          });
+      </script>
+      <div id="meter-log" class="card bg-neutral shadow-lg compact my-8 section-offset">
+        <div class="card-body">
+          <h2 class="card-title text-accent text-xl sm:text-2xl">Meter Log & History</h2>
+          <p class="mb-4">Track and analyze your meter session data with detailed logging and filtering capabilities</p>
+          <div class="flex flex-wrap justify-center">
+            <img src="images/meter/meter-log.png" alt="Meter Log Interface" class="mb-4 mx-auto rounded-lg" />
+          </div>
+          <div class="mt-4">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold mb-3">Meter Log Features</h3>
+            <ul class="list-disc list-inside ml-4 p-4 space-y-2">
+              <li>
+                <strong>Session History:</strong> View all your meter sessions with detailed statistics including averages, duration, and timestamps.
+              </li>
+              <li><strong>Type Filtering:</strong> Filter sessions by meter type (Gold, Experience, etc.) to focus on specific data.</li>
+              <li><strong>Sorting Options:</strong> Sort sessions by start time or average resource rate per second (r/s).</li>
+              <li><strong>Tag System:</strong> Add custom tags to sessions for better organization and quick filtering.</li>
+              <li><strong>Quick Tag Search:</strong> Search sessions by Tag.</li>
+              <li>
+                <strong>Timestamp Display:</strong> Toggle timestamp visibility, this is useful for when you just want to see the relevent data.
+              </li>
+              <li><strong>Session Management:</strong> Delete individual sessions to keep your log clean and organized.</li>
+              <li>
+                <strong>Session Details:</strong> Click the info button at the end of any row to view detailed session information in a popover
+                including total amount, highest single gain, and delete option.
+              </li>
+            </ul>
+            <div class="flex flex-wrap justify-center mt-4">
+              <img
+                src="images/meter/session-details-popover.png"
+                alt="Session Details Popover"
+                class="mb-4 mx-auto rounded-lg border border-base-content/20"
+              />
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold mb-3">Controls</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-2">Navigation Bar</h4>
+                  <img
+                    src="images/meter/expand-to-history.png"
+                    alt="Expand to History Button"
+                    class="mb-3 mx-auto rounded-lg border border-base-content/10"
+                  />
+                  <ul class="text-sm space-y-1 list-disc list-inside ml-4">
+                    <li>Filtering and Sorting</li>
+                    <li><em>Expand to History</em> - Opens full history view with extended functionality</li>
+                    <li>Access Settings and configuration options</li>
+                    <li>Close the meter log window</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-2">Filter & Sort</h4>
+                  <img
+                    src="images/meter/filter-sort.png"
+                    alt="Filter and Sort Options"
+                    class="mb-3 mx-auto rounded-lg border border-base-content/10"
+                  />
+                  <ul class="text-sm space-y-1 list-disc list-inside ml-4">
+                    <li>Filter by meter type (Gold/Experience)</li>
+                    <li>Sort by start time or average rate</li>
+                    <li>Search sessions by custom tags</li>
+                    <li>Clear tag filters with one click</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-2">Tagging System</h4>
+                  <img src="images/meter/tagging-system.png" alt="Tagging System" class="mb-3 mx-auto rounded-lg border border-base-content/10" />
+                  <ul class="text-sm space-y-1 list-disc list-inside ml-4">
+                    <li>Quick tag application and management</li>
+                    <li>Add custom tags to sessions for organization</li>
+                    <li>Pins last used quick tag for auto-tagging consecutive sessions</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold mb-3">Settings & Customization</h3>
+            <div class="flex flex-wrap justify-center mb-4">
+              <img src="images/meter/settings.png" alt="Meter Settings" class="mb-4 mx-auto rounded-lg border border-base-content/20" />
+            </div>
+            <ul class="list-disc list-inside ml-4 p-4 space-y-2">
+              <li><strong>Show Timestamp:</strong> Toggle showing/hiding timestamp columns for cleaner view.</li>
+              <li><strong>Limit Data to Character:</strong> Filter sessions for current active Character when enabled.</li>
+              <li><strong>Pin Last Quick Tag:</strong> Pin your last used Tags for automatic tagging of consecutive sessions.</li>
+            </ul>
+          </div>
+
+          <div id="history" class="mt-6">
+            <h3 class="text-secondary text-lg sm:text-xl font-semibold mb-3">History View & Data Insights</h3>
+            <div class="bg-base-100 rounded-lg p-4">
+              <div class="grid md:grid-cols-5 gap-4 text-center">
+                <div>
+                  <div class="text-accent font-semibold">Average Rate</div>
+                  <div class="text-sm text-base-content/70">Resource per-second for each session</div>
+                </div>
+                <div>
+                  <div class="text-accent font-semibold">Session Duration</div>
+                  <div class="text-sm text-base-content/70">Total time for each session</div>
+                </div>
+                <div>
+                  <div class="text-accent font-semibold">Total Amount</div>
+                  <div class="text-sm text-base-content/70">Complete session totals displayed directly</div>
+                </div>
+                <div>
+                  <div class="text-accent font-semibold">Peak Performance</div>
+                  <div class="text-sm text-base-content/70">Highest single gain recorded</div>
+                </div>
+                <div>
+                  <div class="text-accent font-semibold">Session Timestamps</div>
+                  <div class="text-sm text-base-content/70">Precise start times and dates</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6">
+            <div class="flex flex-wrap justify-center mb-4">
+              <img src="images/meter/history.png" alt="History View" class="mb-4 mx-auto rounded-lg" />
+            </div>
+            <div class="mt-4">
+              <p class="mb-4">
+                History View is available by clicking the <strong>Expand to History</strong> button on the Meter Log, or by clicking the
+                <strong>History</strong> button on the Menu (if you are not on the Dashboard).<br />
+                It is a more comprehensive view of your farming sessions - it allows you to see more data and sort it in a more detailed way.
+              </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-3">Enhanced Table Display</h4>
+                  <ul class="text-sm space-y-2 list-disc list-inside ml-2">
+                    <li><strong>Expanded Columns:</strong> Total and Highest values shown directly in table (no popover needed)</li>
+                    <li><strong>Larger Dataset:</strong> Display up to 50 sessions per page vs 25 in Meter Log</li>
+                    <li><strong>Advanced Sorting:</strong> Sort by Total amount in addition to start time and average rate</li>
+                    <li><strong>Sort Direction Toggle:</strong> Ascending/descending order control with visual indicators</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-3">Bulk Operations</h4>
+                  <ul class="text-sm space-y-2 list-disc list-inside ml-2">
+                    <li><strong>Delete Filtered:</strong> Remove all sessions matching current filter criteria</li>
+                    <li><strong>Delete All:</strong> Complete session history cleanup with confirmation</li>
+                    <li><strong>Bulk Management:</strong> Efficient cleanup for large datasets</li>
+                    <li><strong>Smart Confirmation:</strong> Safety prompts prevent accidental data loss</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-3">Enhanced Filtering</h4>
+                  <ul class="text-sm space-y-2 list-disc list-inside ml-2">
+                    <li><strong>Horizontal Filter Bar:</strong> Always-visible filter controls for quick access</li>
+                    <li><strong>Extended Search:</strong> More robust tag and type filtering capabilities</li>
+                    <li><strong>Character-Specific:</strong> Filter sessions by specific character when enabled</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-sm">
+                <div class="card-body p-4">
+                  <h4 class="font-semibold text-accent mb-3">Advanced Navigation</h4>
+                  <ul class="text-sm space-y-2 list-disc list-inside ml-2">
+                    <li><strong>Real-Time Updates:</strong> When coupled with Meter Overlays, latest session stats are displayed as well</li>
+                    <li><strong>Dynamic Pagination Display:</strong> Pagination is displayed based on the number of sessions (50)</li>
+                    <li><strong>Full Controls:</strong> Navigate through many sessions with First/Previous/Next controls</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 bg-info/10 rounded-lg p-4 border-l-4 border-info">
+              <div class="flex items-start gap-3">
+                <svg class="size-6 text-info mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-info mb-1">When to Use Each View</h5>
+                  <p class="text-sm">
+                    <strong>Meter Log:</strong> Available on the Dashboard as a quick overview of recent sessions, use alongside dashboard Meters
+                    while actively farming and checking latest results
+                  </p>
+                  <p class="text-sm">
+                    <strong>History View:</strong> Icon on Menu when not on the Dashboard, best used if you prefer to play with Meter Overlays.
+                    Perfect for deep analysis, data cleanup, bulk operations, and comprehensive session management
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
