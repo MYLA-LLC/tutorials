@@ -28,16 +28,12 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) dIVa v2.1.0 - Advanced Analytics & History
+## (Latest Features) dIVa v2.2.0 - Enhanced Leveling System
 
-- **Meter Log** - Compact session tracking interface with quick access to recent performance data and instant analysis
-- **History View** - Comprehensive historical database with paginated browsing through session data
-- **Session Analytics** - Custom tagging system, advanced filtering, and detailed metrics including totals, averages, and peak values
-- **Smart Management** - Bulk operations, character-specific filtering, and automatic tag pinning for consecutive sessions
+- **Speed Leveling Tracker** - All of the following improvements are transparent to the user experience. Time segment tracking that adapts to your play sessions - Leveling data now breaks down into precise time segments based on when you start and pause your speed leveling tracker
 
-### Diablo IV: Sins of the Horadrim
-
-Updated data for Season 9
+### Diablo IV: Infernal Chaos
+Updated data and systems for Season 10
 
 ### Path of Exile 2 (Dawn of the Hunt)
 
