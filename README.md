@@ -10,7 +10,7 @@ _Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics compani
 
 ### Supported Games
 
-- Path of Exile 2 (Dawn of the Hunt)
+- Path of Exile 2 (The Third Edit)
 - Diablo IV (including Vessel of Hatred expansion)
 - Diablo II: Resurrected
 
@@ -28,14 +28,17 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) dIVa v2.2.0 - Enhanced Leveling System
+## (Latest Features) v2.3.0 - History Date Filtering
 
-- **Speed Leveling Tracker** - All of the following improvements are transparent to the user experience. Time segment tracking that adapts to your play sessions - Leveling data now breaks down into precise time segments based on when you start and pause your speed leveling tracker
+- **Enhanced Filter Management** - Improved filter clearing and management for a better user experience. Date Range Filter is a new collapsible section in the Historyfilter menu.
+- **Date Range Filter** - Advanced date-based filtering for precise session analysis and historical data exploration.Persistent date range settings that remember your preferences across sessions
+- **Total Meter Sessions Counter** - Real-time meter session count display for better tracking
 
 ### Diablo IV: Infernal Chaos
+
 Updated data and systems for Season 10
 
-### Path of Exile 2 (Dawn of the Hunt)
+### Path of Exile 2 (The Third Edit)
 
 - **Character Detection:** Introducing a specialized class detection system for Path of Exile 2 characters.
 - When you log in, dIVa will prompt you to select your character's class, and will remember it for future sessions, ensuring accurate character tracking and analytics while Overwolf game events are in development.

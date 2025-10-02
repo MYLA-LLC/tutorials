@@ -38,6 +38,10 @@
               <li>
                 <strong>Session History:</strong> View all your meter sessions with detailed statistics including averages, duration, and timestamps.
               </li>
+              <li>
+                <strong>Date Range Filtering:</strong> Filter sessions by specific date ranges for precise historical analysis and targeted data
+                exploration.
+              </li>
               <li><strong>Type Filtering:</strong> Filter sessions by meter type (Gold, Experience, etc.) to focus on specific data.</li>
               <li><strong>Sorting Options:</strong> Sort sessions by start time or average resource rate per second (r/s).</li>
               <li><strong>Tag System:</strong> Add custom tags to sessions for better organization and quick filtering.</li>
@@ -45,6 +49,7 @@
               <li>
                 <strong>Timestamp Display:</strong> Toggle timestamp visibility, this is useful for when you just want to see the relevent data.
               </li>
+              <li><strong>Total Meter Sessions Counter:</strong> Real-time display of total session count for better progress tracking.</li>
               <li><strong>Session Management:</strong> Delete individual sessions to keep your log clean and organized.</li>
               <li>
                 <strong>Session Details:</strong> Click the info button at the end of any row to view detailed session information in a popover
@@ -89,10 +94,11 @@
                     class="mb-3 mx-auto rounded-lg border border-base-content/10"
                   />
                   <ul class="text-sm space-y-1 list-disc list-inside ml-4">
+                    <li>Filter by date range for precise historical analysis</li>
                     <li>Filter by meter type (Gold/Experience)</li>
                     <li>Sort by start time or average rate</li>
                     <li>Search sessions by custom tags</li>
-                    <li>Clear tag filters with one click</li>
+                    <li>Clear all filters with one click</li>
                   </ul>
                 </div>
               </div>
@@ -152,8 +158,25 @@
           </div>
 
           <div class="mt-6">
-            <div class="flex flex-wrap justify-center mb-4">
-              <img src="images/meter/history.png" alt="History View" class="mb-4 mx-auto rounded-lg" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+              <div class="card bg-base-200">
+                <figure class="px-4 pt-4">
+                  <img src="images/meter/history.png" alt="History View - Collapsed Date Range" class="rounded-xl" />
+                </figure>
+                <div class="card-body p-4">
+                  <h3 class="card-title text-sm">History View - Collapsed Date Range</h3>
+                  <p class="text-sm">Date Range filter is collapsed, showing calendar icon</p>
+                </div>
+              </div>
+              <div class="card bg-base-200">
+                <figure class="px-4 pt-4">
+                  <img src="images/meter/history-expanded.png" alt="History View - Expanded Date Range" class="rounded-xl" />
+                </figure>
+                <div class="card-body p-4">
+                  <h3 class="card-title text-sm">History View - Expanded Date Range</h3>
+                  <p class="text-sm">Date Range filter is expanded, showing up arrow to collapse</p>
+                </div>
+              </div>
             </div>
             <div class="mt-4">
               <p class="mb-4">
@@ -161,6 +184,37 @@
                 <strong>History</strong> button on the Menu (if you are not on the Dashboard).<br />
                 It is a more comprehensive view of your farming sessions - it allows you to see more data and sort it in a more detailed way.
               </p>
+
+              <div class="bg-info/10 rounded-lg p-4 border-l-4 border-info mb-4">
+                <div class="flex items-start gap-3">
+                  <svg class="size-6 text-info mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-6.001 0c-3.198 0-6.001-1.5-6.001-3.5 0-1.5 2.803-3.5 6.001-3.5s6.001 1.5 6.001 3.5c0 1.5-2.803 3.5-6.001 3.5Z"
+                    />
+                  </svg>
+                  <div>
+                    <h5 class="font-semibold text-info mb-1">Collapsible Date Range Filter</h5>
+                    <p class="text-sm mb-2">
+                      The Date Range Filter is a new collapsible section in the History filter menu that provides advanced date-based filtering
+                      capabilities:
+                    </p>
+                    <ul class="text-sm space-y-1 list-disc list-inside ml-4">
+                      <li><strong>Toggle Button:</strong> Click the calendar icon to expand the date range filter section</li>
+                      <li>
+                        <strong>Calendar Interface:</strong> When expanded, shows interactive calendar widgets for selecting start and end dates
+                      </li>
+                      <li><strong>Collapse Button:</strong> Click the up arrow icon to collapse the date range section back to a compact view</li>
+                      <li><strong>Individual Date Clearing:</strong> Each date field has its own clear button for quick reset</li>
+                      <li><strong>Clear All Dates:</strong> Use the "Clear" button to reset both from and to dates simultaneously</li>
+                      <li>
+                        <strong>Persistent Settings:</strong> Your date range preferences are remembered across sessions for consistent filtering
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
@@ -191,8 +245,10 @@
                   <h4 class="font-semibold text-accent mb-3">Enhanced Filtering</h4>
                   <ul class="text-sm space-y-2 list-disc list-inside ml-2">
                     <li><strong>Horizontal Filter Bar:</strong> Always-visible filter controls for quick access</li>
+                    <li><strong>Date Range Filtering:</strong> Advanced date-based filtering for precise historical analysis</li>
                     <li><strong>Extended Search:</strong> More robust tag and type filtering capabilities</li>
                     <li><strong>Character-Specific:</strong> Filter sessions by specific character when enabled</li>
+                    <li><strong>Smart Filter Clearing:</strong> Enhanced filter management with improved clearing options</li>
                   </ul>
                 </div>
               </div>
