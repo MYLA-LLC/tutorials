@@ -10,7 +10,7 @@ _Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics compani
 
 ### Supported Games
 
-- Path of Exile 2 (The Third Edit)
+- Path of Exile 2 (The Last of the Druids)
 - Diablo IV (including Vessel of Hatred expansion)
 - Diablo II: Resurrected
 
@@ -28,21 +28,19 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) v2.3.0 - History Date Filtering
+## (Latest Features) v2.4.0 - Seasonal Game & Performance Updates
 
-- **Enhanced Filter Management** - Improved filter clearing and management for a better user experience. Date Range Filter is a new collapsible section in the Historyfilter menu.
-- **Date Range Filter** - Advanced date-based filtering for precise session analysis and historical data exploration.Persistent date range settings that remember your preferences across sessions
-- **Total Meter Sessions Counter** - Real-time meter session count display for better tracking
+- **Improved Features Window Drag Enablement** - Enhanced detection on Feature's window open and drag enablement
+- **Background Services Optimization** - Improved Layout, Subscription, and Translation services management for better performance and reliability
 
-### Diablo IV: Infernal Chaos
+### Diablo IV: Divine Intervention
 
-Updated data and systems for Season 10
+Updated Nightmare Dungeons data for Season 11
 
-### Path of Exile 2 (The Third Edit)
+### Path of Exile 2: The Last of the Druids
 
-- **Character Detection:** Introducing a specialized class detection system for Path of Exile 2 characters.
-- When you log in, dIVa will prompt you to select your character's class, and will remember it for future sessions, ensuring accurate character tracking and analytics while Overwolf game events are in development.
-- **Experience Meter Enabled:** Experience Game Event is now supported in Overwolf
+- **Character Detection:** Specialized class detection system for Path of Exile 2 characters.
+- **Druid Class Support:** Full support for the new Druid class with Oracle and Shaman ascendancy options
 - **Instance Alert:** Timer for alerting when instances are at risk of expiring during town visits. Available as a Desktop element, or an in-game overlay.
 
 ### Theme System
