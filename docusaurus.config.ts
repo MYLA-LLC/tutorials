@@ -12,7 +12,7 @@ const config: Config = {
   },
 
   url: "https://myla-llc.github.io",
-  baseUrl: "/",
+  baseUrl: "/tutorials/",
   organizationName: "myla-llc",
   projectName: "tutorials",
   onBrokenLinks: "throw",
