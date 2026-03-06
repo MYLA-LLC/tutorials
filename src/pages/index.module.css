@@ -1,0 +1,44 @@
+.header {
+  padding: 3rem 0 1.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 0.75rem auto 0;
+  max-width: 48rem;
+  opacity: 0.9;
+}
+
+.main {
+  padding: 1.5rem 0 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  grid-column: span 12;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 996px) {
+  .card {
+    grid-column: 3 / span 8;
+  }
+}
+
+.cardTitle {
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  margin: 0;
+}
+
+.cardCta {
+  width: 100%;
+  justify-content: center;
+}

@@ -2,7 +2,7 @@
 
 # dIVa
 
-A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE2, D4 and D2R
+A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE, PoE2, D4 and D2R
 
 [Tutorial](https://myla-llc.github.io/tutorials/dIVa/index.html)
 
@@ -10,8 +10,9 @@ _Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics compani
 
 ### Supported Games
 
-- Path of Exile 2 (The Last of the Druids)
-- Diablo IV (including Vessel of Hatred expansion)
+- Path of Exile 2
+- Path of Exile
+- Diablo IV
 - Diablo II: Resurrected
 
 dIVa supports multiple languages, allowing you to enjoy the full experience in your preferred language!
@@ -28,28 +29,14 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) v2.4.0 - Seasonal Game & Performance Updates
+## (Latest Features) v2.5.0 - Path of Exile, Game Events Status & Leveling Enhancements
 
-- **Improved Features Window Drag Enablement** - Enhanced detection on Feature's window open and drag enablement
-- **Background Services Optimization** - Improved Layout, Subscription, and Translation services management for better performance and reliability
+- **Path of Exile:** Full support alongside PoE2, D4, and D2R
+- **Game Event Status:** Overwolf Game Event Status API integration
+- **Leveling:** New settings, milestone notifications, and "ahead of best" timer in Desktop and Overlay
+- **Diablo:** Warlock class support for Diablo IV and Diablo II: Resurrected
+- **Character Sidebar:** Quick Load for Last Character for faster layout switching
 
-### Diablo IV: Divine Intervention
-
-Updated Nightmare Dungeons data for Season 11
-
-### Path of Exile 2: The Last of the Druids
-
-- **Character Detection:** Specialized class detection system for Path of Exile 2 characters.
-- **Druid Class Support:** Full support for the new Druid class with Oracle and Shaman ascendancy options
-- **Instance Alert:** Timer for alerting when instances are at risk of expiring during town visits. Available as a Desktop element, or an in-game overlay.
-
-### Theme System
-
-- **Game-Specific Themes:** Each supported game now has its own unique theme, bringing the perfect ambiance to your analytics:
-  - **dIVa:** The default theme, fiery orange and red darkness
-  - **Vessel of Hatred:** Embrace the new jungle green aesthetics with our Diablo IV expansion theme
-  - **Path of Exile:** Experience the gritty midnight blue atmosphere of Wraeclast
-- **Dynamic Theme Switching:** Themes automatically adjust based on your active game, or manually select your preferred theme in [Settings](settings.html#themes)
-- **Enhanced Visuals:** Revamped UI elements, icons, and color schemes to match each game's unique aesthetic
+Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html).
 
 Visit our [User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html), or see the introduction video on [YouTube](https://youtu.be/8fhdihZ7iy4)!
