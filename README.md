@@ -2,7 +2,7 @@
 
 # dIVa
 
-A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE, PoE2, D4 and D2R
+A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE2, PoE, D4 and D2R
 
 [Tutorial](https://myla-llc.github.io/tutorials/dIVa/index.html)
 
@@ -37,6 +37,6 @@ Please feel free to report any issues, or leave suggestions!
 - **Diablo:** Warlock class support for Diablo IV and Diablo II: Resurrected
 - **Character Sidebar:** Quick Load for Last Character for faster layout switching
 
-Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html).
+Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/docs/dIVa/).
 
-Visit our [User Guide](https://myla-llc.github.io/tutorials/dIVa/index.html), or see the introduction video on [YouTube](https://youtu.be/8fhdihZ7iy4)!
+Visit our [User Guide](https://myla-llc.github.io/tutorials/docs/dIVa/), or see the introduction video on [YouTube](https://youtu.be/8fhdihZ7iy4)!
