@@ -40,8 +40,16 @@ Maximize your efficiency in every gaming session with dIVa!
   - Overwolf has confirmed the changes to **Diablo 2: Resurrected** were so extensive that the existing events are no longer usable and would need to be rebuilt from scratch. At this time, they do not have the capacity to work on rebuilding them, and there is no ETA on when game events will be available.
 - **Leveling:**
   - New Leveling settings, milestone notifications, and "ahead of best" timer in Desktop and Overlay
-- **Diablo:** Warlock class support added for Diablo IV and Diablo II: Resurrected
+- **Diablo:** Warlock class support added for Diablo II: Resurrected
 - **Character Sidebar:** Quick Load for Last Character for faster layout switching.
+
+#### v2.5.1 - Dungeons Layout & Sort
+
+- **Diablo IV - Dungeons:** New layout toggle (vertical vs horizontal) and sort controls (Sort by Act, Sort Alphabetically) for the Nightmare Dungeons tier list.
+
+#### v2.5.2 - Season of Slaughter
+
+- **Diablo IV - Sigils:** Data has been updated for Season 12 - Season of Slaughter.
 
 ### v2.4.0 - Seasonal Game & Performance Updates
 
