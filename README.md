@@ -4,7 +4,7 @@
 
 A dynamic interface with visual analytics, dIVa elevates your aRPG journey with real-time statistics and intelligent overlays, Speed Leveling, and more! Supports PoE2, PoE, D4 and D2R
 
-[Tutorial](https://myla-llc.github.io/tutorials/dIVa/index.html)
+[Tutorial](https://myla-llc.github.io/tutorials/docs/dIVa/)
 
 _Designed for true enthusiasts, **dIVa** is your ultimate aRPG analytics companion. Discover the most resource-efficient gameplay strategies across multiple games with in-game overlays that provide real-time updates on Gold, Experience, and Speed Leveling. Maximize your efficiency in every gaming session with **dIVa**!_
 
