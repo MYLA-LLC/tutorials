@@ -29,13 +29,10 @@ dIVa supports multiple languages, allowing you to enjoy the full experience in y
 A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord</a> server is now available for dIVa users to discuss and share their experiences with the app.
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) v2.5.2 - Path of Exile, Game Events Status & Leveling Enhancements
+## (Latest Features) v2.6.0 - Lord of Hatred
 
-- **Path of Exile:** Full support alongside PoE2, D4, and D2R
-- **Game Event Status:** Overwolf Game Event Status API integration
-- **Leveling:** New settings, milestone notifications, and "ahead of best" timer in Desktop and Overlay
-- **Diablo:** Warlock class support Diablo II: Resurrected & Season of Slaughter update for Diablo IV
-- **Character Sidebar:** Quick Load for Last Character for faster layout switching
+- **Diablo IV:** Warlock class support with updated character artwork
+- **Diablo IV - Leveling:** Main level cap support updated from 60 to 70
 
 Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/docs/dIVa/).
 
