@@ -20,7 +20,7 @@ The management of character aliases has been improved with a dedicated Character
 - **Level:** Displays the Alias' last known level.
 - **Actions:** Perform actions on the Alias such as Edit, Remove, or Mark as Favorite.
 
-## Adding a New Character {#add-characters}
+## Adding a New Character
 
 ### Diablo IV
 
