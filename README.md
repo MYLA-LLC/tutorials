@@ -31,8 +31,8 @@ Please feel free to report any issues, or leave suggestions!
 
 ## (Latest Features) v2.6.0 - Lord of Hatred
 
-- **Diablo IV:** Warlock class support with updated character artwork
-- **Diablo IV - Leveling:** Main level cap support updated from 60 to 70
+- **Diablo IV:** Warlock class support has been added
+- **Diablo IV - Leveling:** Main level cap updated from 60 to 70
 
 Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/docs/dIVa/).
 
