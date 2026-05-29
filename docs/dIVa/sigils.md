@@ -8,9 +8,9 @@ The Inventory feature in dIVa provides a comprehensive inventory management syst
 
 - **Best Sigils:** Displays your Best Sigil available with a quick manual CONSUME action.
 - **Views:** View all your Sigils in a compact grid views, or a detailed list view.
-- **Overlay:** In-game Overlay to display your Best Sigil available.
+- **Overlay:** In-game Overlay to display your Best Sigil available. Toggle it from the [In-Game Overlay](./in-game-overlay.md) (Inventory button) or from Inventory settings.
 - **Analyze Filter:** Analyze your Sigils based on the Tier Type selected.
-- **Season Filter:** View sigils specific to the current season.
+- **Season Filter:** View sigils specific to the current season (for example, Season of Reckoning).
 - **Search:** Quickly find specific sigils using the search bar.
 - **Sort Options:** Organize sigils based on different criteria (e.g., Act, Alphabetical, Count).
 - **Settings:** Configure settings for your Inventory.

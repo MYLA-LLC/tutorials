@@ -14,7 +14,7 @@ The Dungeons feature in dIVa provides a comprehensive Tier List of Nightmare Dun
 
 - **Search:** Quickly find specific dungeons using the search bar.
 - **Tier Type Filter:** Sort dungeons by their assigned tier type (e.g. Experience).
-- **Season Filter:** View dungeons specific to the current season (e.g., 8 - Belial's Return).
+- **Season Filter:** View dungeons specific to the current season (for example, Season of Reckoning).
 - **Dungeon Icons:** Visual representations of each dungeon for easy identification.
 - **Dungeon Names:** Clear labeling of each dungeon within its respective tier.
 

@@ -31,6 +31,30 @@ Maximize your efficiency in every gaming session with dIVa!
 
 ## Changelog
 
+### v2.7.0 - In-Game Overlay & Settings
+
+- **In-Game Overlay:**
+  - Added a compact in-game sidebar for toggling overlays without alt-tabbing to the dashboard.
+  - **In-Game Overlay Setting:**
+    - **Auto-detect**: Shows the sidebar when the game runs on a single monitor.
+    - **Enabled**: Always shows the sidebar while the game is running.
+    - **Disabled**: Hides the sidebar while the game is running.
+  - **Connected Sidebars:**
+    - The in-game sidebar highlights only active overlays; the dashboard sidebar highlights meters and leveling when open on the dashboard or as an overlay.
+    - Opening a meter from the in-game sidebar launches it as an overlay and enables its overlay preference.
+  - See [In-Game Overlay](./in-game-overlay.md) for details.
+- **Settings:**
+  - Redesigned layout for new preferences and features.
+  - **Key Bindings:**
+    - Global **Bring dIVa to Front** hotkey (Overwolf hotkeys) configurable from Settings.
+    - See [Key Bindings](./key-bindings.md) for details.
+  - **Manage Data:**
+    - Redesigned with Best Run view and delete, per-Meter and Characters deletion, preference resets (game, theme, language, layout), and a **Danger Zone** for full game or app data deletion.
+    - See [Manage Data](./manage-data.md) for details.
+- **Speed Leveling:**
+  - **Best Run:** Records a new Best Run when the level cap increases, not only when beating the previous time at the same cap.
+  - **Notifications:** Improved Milestone notifications when a new personal best is saved.
+
 ### v2.6.0 - Lord of Hatred
 
 - **Diablo IV:** Warlock class support has been added.

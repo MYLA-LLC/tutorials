@@ -21,3 +21,4 @@ Screenshots of the Gold and Experience Meters.
 - **Session High:** Displays the highest amount of gold or experience gained in a session.
 - **Lifetime Average:** Displays the lifetime average gold or experience per second.
 - **In-Game Overlay:** Shows a limited subset of this information when used as an in-game overlay.
+- **In-Game Overlay:** Toggle meters from the in-game strip; highlights only when the meter is running as an overlay. The dashboard sidebar still highlights when a meter is open on either surface. See [In-Game Overlay](./in-game-overlay.md).

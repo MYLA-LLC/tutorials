@@ -22,6 +22,16 @@ title: Speed Leveling Tracker
 - **Time Comparison:** The Best Run feature allows users to compare their current time with their best (fastest) run for that milestone and levels.
 - **Color-coded Feedback:** The elapsed time is color-coded to provide immediate feedback. Green indicates you are faster than your best run, while red indicates you are slower.
 - **Offline Progress Exclusion:** If you have leveled offline, your completed run will not qualify to be stored as your Best Run. The Best Run is reserved for the automated leveling progress since it is more precise and provides the full leveling detail.
+- **Level Cap Changes:** When the supported level cap increases (for example, after a game patch), completing a run to the new cap counts as a new Best Run even if your total time is not faster than a previous run at a lower cap.
+
+### Manage Best Run
+
+From **Settings → Manage Data**, you can manage your stored Best Run for the active game:
+
+- **View** the record details (GUID, character, level).
+- **Delete** the stored record without removing other game data.
+
+See [Manage Data](./manage-data.md) for the full data-management screen.
 
 <span className="center">
 
@@ -31,7 +41,7 @@ title: Speed Leveling Tracker
 
 ## Leveling Overlay
 
-The Leveling Overlay provides a clear visual interface in-game to track your leveling progress in real-time. It includes essential information and controls for managing your leveling milestones efficiently.
+The Leveling Overlay provides a clear visual interface in-game to track your leveling progress in real-time. You can open or close it from the [In-Game Overlay](./in-game-overlay.md) strip or from the dashboard sidebar. It includes essential information and controls for managing your leveling milestones efficiently.
 
 - **Milestone Display:** Indicates the current milestone in your leveling journey. The milestone number updates automatically as you progress.
 - **Total Elapsed Time:** The overlay shows the total time elapsed since the start of the leveling progress.

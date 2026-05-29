@@ -3,12 +3,18 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebars: SidebarsConfig = {
   dIVaSidebar: [
     "desktop",
+    "in-game-overlay",
     {
       type: "category",
       label: "Features",
       items: ["characters", "meters", "meter-log-and-history", "speed-leveling-tracker", "offline-mode"],
     },
-    "settings",
+    {
+      type: "category",
+      label: "Settings",
+      link: { type: "doc", id: "settings" },
+      items: ["key-bindings", "manage-data"],
+    },
     {
       type: "html",
       value: '<div class="sidebar-section-separator"><span class="separator-text">Games</span></div>',

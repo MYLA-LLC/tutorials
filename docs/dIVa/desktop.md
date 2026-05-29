@@ -27,6 +27,16 @@ Diablo IV Desktop
 
 </span>
 
+### Sidebar Navigation
+
+The left sidebar is your main control surface on the dashboard:
+
+- **Route buttons** (Characters, Dashboard, Settings, and others) navigate the main window.
+- **Feature buttons** (Meters, Speed Leveling, Inventory, and others) open or close panels on the dashboard or in separate feature windows.
+- **Meters and Speed Leveling** are highlighted when that feature is open **anywhere**—on the dashboard or as an in-game overlay—while you are on the main dashboard view.
+
+For in-game access without alt-tabbing, see [In-Game Overlay](./in-game-overlay.md).
+
 ### Functionality
 
 - Game Selector in top bar enables offline viewing and switching between supported games.
@@ -40,7 +50,7 @@ Diablo IV Desktop
 
 ### Notification Viewer
 
-The new Notification Viewer provides a centralized location to manage all your dIVa notifications:
+The Notification Viewer provides a centralized location to manage all your dIVa notifications:
 
 - **Search:** Easily find specific notifications using the search functionality.
 - **Delete:** Remove individual notifications or clear all notifications at once.
