@@ -44,7 +44,7 @@ Three action cards at the top open focused areas. Each opens a view within Setti
 
 Shown for the game you are logged into (for example, **Diablo 4 Configuration**):
 
-- **Overlay options** (Experience Overlay, Gold Overlay, Instance Alert Overlay, and others depending on the game): Default overlay placement for that feature. Toggles in Settings stay aligned when you open or close features from the [dashboard sidebar](./desktop.md) or [In-Game Overlay](./in-game-overlay.md).
+- **Overlay options** (Experience Overlay, Gold Overlay, Instance Alert Overlay, and others depending on the game): Default overlay placement for that feature. Toggles in Settings stay aligned when you open or close features from the [dashboard sidebar](./dashboard.md) or [In-Game Overlay](./in-game-overlay.md).
 - **Open Features Window:** When enabled, Inventory and Tier List Catalog open in a separate feature window instead of the dashboard pane.
 
 <a id="themes"></a>

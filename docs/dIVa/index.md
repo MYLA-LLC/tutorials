@@ -68,7 +68,7 @@ Maximize your efficiency in every gaming session with dIVa!
   - Meter respect game event availability. Meter is disabled when events are unavailable.
   - Overwolf has confirmed the changes to **Diablo 2: Resurrected** were so extensive that the existing events are no longer usable and would need to be rebuilt from scratch. At this time, they do not have the capacity to work on rebuilding them, and there is no ETA on when game events will be available.
 - **Leveling:**
-  - New Leveling settings, milestone notifications, and "ahead of best" timer in Desktop and Overlay
+  - New Leveling settings, milestone notifications, and "ahead of best" timer in Dashboard and Overlay
 - **Diablo:** Warlock class support added for Diablo II: Resurrected
 - **Character Sidebar:** Quick Load for Last Character for faster layout switching.
 

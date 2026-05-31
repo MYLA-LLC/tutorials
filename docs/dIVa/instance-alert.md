@@ -8,7 +8,7 @@ The alert system provides both visual and audio cues as you approach the instanc
 
 <div className="side-by-side">
 
-![Instance Alert (Desktop)](/images/dIVa/instance-alert/instance-alert.png)
+![Instance Alert (Dashboard)](/images/dIVa/instance-alert/instance-alert.png)
 ![Instance Alert (Expired)](/images/dIVa/instance-alert/instance-alert-danger.png)
 
 </div>

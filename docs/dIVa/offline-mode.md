@@ -10,7 +10,7 @@ Perfect for games in beta (like Path of Exile 2) or when game integration is tem
 
 1. Create a new Character offline. Steps on how to do this can be found in the [Characters](./characters#adding-a-new-character) section.
 2. Your new Character will automatically be set to Offline Mode, identifiable by the offline icon.
-3. Start tracking from the Desktop screen with a 2-second long press on the Start button.
+3. Start tracking from the Dashboard screen with a 2-second long press on the Start button.
    - Please note that starting offline leveling will flag your character, making it ineligible for the Best Run tracker, but you will still be able to track your personal progress.
 4. Track your leveling progress by manually updating milestones every 10 levels.
 

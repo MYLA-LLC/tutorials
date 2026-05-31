@@ -2,7 +2,7 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebars: SidebarsConfig = {
   dIVaSidebar: [
-    "desktop",
+    "dashboard",
     "in-game-overlay",
     {
       type: "category",

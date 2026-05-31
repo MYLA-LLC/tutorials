@@ -51,8 +51,8 @@ The **Dashboard** sidebar and **In-Game Overlay** strip each control their own s
 #### Highlighting
 
 - **Dashboard sidebar**
-  - **Leveling / Sigils:** Active when the dashboard view is open whether it be on the desktop or in the feature window.
-  - **Meters:** Active when the meter is open on the dashboard or overlay (while on the Desktop route).
+  - **Leveling / Sigils:** Active when the dashboard view is open whether it be on the dashboard or in the feature window.
+  - **Meters:** Active when the meter is open on the dashboard or overlay (while on the Dashboard route).
 - **In-Game Overlay strip:** Active when that feature's in-game widget is open.
 
 #### Dashboard

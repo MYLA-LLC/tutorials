@@ -1,5 +1,5 @@
 ---
-title: Desktop
+title: Dashboard
 ---
 
 ### Multi-Game Support
@@ -13,17 +13,17 @@ dIVa currently supports the following games:
 
 <span className="center">
 
-Path of Exile 2 Desktop
+Path of Exile 2 Dashboard
 
-![Path of Exile 2 Desktop](/images/dIVa/desktop-full-poe2.png)
+![Path of Exile 2 Dashboard](/images/dIVa/dashboard-full-poe2.png)
 
 </span>
 
 <span className="center">
 
-Diablo IV Desktop
+Diablo IV Dashboard
 
-![Diablo IV Desktop](/images/dIVa/desktop-full-d4.png)
+![Diablo IV Dashboard](/images/dIVa/dashboard-full-d4.png)
 
 </span>
 
@@ -40,8 +40,8 @@ For in-game access without alt-tabbing, see [In-Game Overlay](./in-game-overlay.
 ### Functionality
 
 - Game Selector in top bar enables offline viewing and switching between supported games.
-- **Gold Meter:** This meter can run either in-game or as part of the desktop window.
-- **Experience Meter:** Similar to the Gold Meter, this meter can run either in-game or as part of the desktop window.
+- **Gold Meter:** This meter can run either in-game or as part of the dashboard window.
+- **Experience Meter:** Similar to the Gold Meter, this meter can run either in-game or as part of the dashboard window.
 - **Speed Leveling Tracker:** Monitors the speed at which your character levels up. Displays time for every Milestone!
 - **Notification Viewer:** Access a comprehensive list of all notifications, with search and delete functionality.
 - **Settings:**
