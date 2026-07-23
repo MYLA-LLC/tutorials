@@ -31,6 +31,15 @@ Maximize your efficiency in every gaming session with dIVa!
 
 ## Changelog
 
+### v2.8.0 - Character Resolution
+
+- **Characters:** Replaced Merge Decision with Character Resolution: smarter auto-sync and a clearer **Which Character Is This?** screen when dIVa cannot match your game character to a saved run.
+  - Choose between **Sync Characters** (keep your alias, update level) or **Create New Alias**.
+  - Saved run tiles show stored level and last-played date; inactive runs at an exact level match show a confirmation message before syncing.
+  - Offline-loaded runs sync silently when you log in, including large level jumps. If the game matches a different saved run at the exact same level, dIVa switches to it without prompting.
+  - When no runs qualify for sync and your in-game name is still available, dIVa creates a new run silently. When the name is already taken, you are prompted for a unique alias with no sync options shown.
+  - See [Characters: Syncing Game Characters](./characters#syncing-game-characters) for details.
+
 ### v2.7.0 - In-Game Overlay & Settings
 
 - **In-Game Overlay:**

@@ -30,7 +30,11 @@ A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord<
 
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) v2.7.0 - In-Game Overlay & Settings Redesign
+## (Latest Features) v2.8.0 - Character Resolution
+
+- **Characters:** Smarter auto-sync when logging in, plus a clearer **Which Character Is This?** screen when dIVa cannot match your game character to a saved run. Choose **Sync Characters** or **Create New Alias**.
+
+## v2.7.0 - In-Game Overlay & Settings Redesign
 
 - **In-Game Overlay:**
   - Compact in-game sidebar for toggling overlays without alt-tabbing

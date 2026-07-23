@@ -104,7 +104,7 @@ Track and analyze your meter session data with detailed logging and filtering ca
 
 History View is available by clicking the **Expand to History** button on the Meter Log, or by clicking the **History** button on the Menu (if you are not on the Dashboard). It is a more comprehensive view of your farming sessions - it allows you to see more data and sort it in a more detailed way.
 
-:::info Collapsible Date Range Filter
+:::info[Collapsible Date Range Filter]
 The Date Range Filter is a new collapsible section in the History filter menu that provides advanced date-based filtering capabilities:
 
 - **Toggle Button:** Click the calendar icon to expand the date range filter section
@@ -143,7 +143,7 @@ The Date Range Filter is a new collapsible section in the History filter menu th
 - **Dynamic Pagination Display:** Pagination is displayed based on the number of sessions (50)
 - **Full Controls:** Navigate through many sessions with First/Previous/Next controls
 
-:::info When to Use Each View
+:::info[When to Use Each View]
 **Meter Log:** Available on the Dashboard as a quick overview of recent sessions, use alongside dashboard Meters while actively farming and checking latest results
 
 **History View:** Icon on Menu when not on the Dashboard, best used if you prefer to play with Meter Overlays. Perfect for deep analysis, data cleanup, bulk operations, and comprehensive session management

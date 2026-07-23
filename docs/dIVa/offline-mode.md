@@ -20,11 +20,7 @@ Perfect for games in beta (like Path of Exile 2) or when game integration is tem
 
 </span>
 
-5. When game integration becomes available for your game, simply log in with your Character selected, and dIVa will automatically transition to online tracking.
-
-:::info Path of Exile 2 (Beta) Support
-Please be aware that Overwolf PoE2 Game Events are in development and automatic speed leveling tracker is currently unavailable.
-:::
+5. When game integration becomes available for your game, simply log in with your Character selected. dIVa tries to match your offline run to the live game character automatically. If it cannot decide, you will see the [Character Resolution screen](./characters#syncing-game-characters).
 
 ### Original Video Overview
 

@@ -2,7 +2,7 @@
 title: Class Detection
 ---
 
-:::warning Legacy
+:::warning[Legacy]
 As of dIVa v2.5.0, Path of Exile 2 uses Overwolf game events for class detection and no longer uses manual class selection.\
 This document describes the legacy manual class selection flow and is kept for reference.
 :::
@@ -48,17 +48,17 @@ A prompt will appear asking you to select your character's class from the availa
 
 ## Approaches for Existing Characters new to dIVa
 
-1. **Create a New dIVa Character & Merge**
+1. **Create a New dIVa Character & Sync**
    - Create a new dIVa Character
    - Start Offline leveling to correct Milestone; meaning, if your Character is Level 23, you'll need to click _Next Milestone_ to set it to 20.
    - With Leveling active, log into Path of Exile 2 and select your corresponding Character.
-   - dIVa will detect your Character given Name matches, and prompt for Merge Decision. Click Merge.
-   - dIVa will instant level your Character's data and begin tracking.
+   - dIVa will detect your Character given Name matches, and show **Which Character Is This?** Click **Sync Characters** to link your offline run to the live game character.
+   - dIVa will update your character's level and begin online tracking. See [Syncing Game Characters](./characters#syncing-game-characters) for details.
 2. **First-Time Detection**
    - When you first launch dIVa with an existing Path of Exile 2 character, you'll be prompted to select their class just once.
    - _Milestones in Leveling_: dIVa will track your character's progress from this point, meaning if your Character is level 23 as an example, the first Milestone in leveling data will be _Milestone 20_, not Milestone 1 (Start)
 
-:::caution Important Note regarding Milestones
+:::warning[Important Note regarding Milestones]
 A _Milestone_ is every 10 levels.
 
 _Start_, or Milestone 1, begins at level 1 to 9.
