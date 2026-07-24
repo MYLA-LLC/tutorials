@@ -34,8 +34,6 @@ Please feel free to report any issues, or leave suggestions!
 
 - **Characters:** Smarter auto-sync when logging in, plus a clearer **Which Character Is This?** screen when dIVa cannot match your game character to a saved run. Choose **Sync Characters** or **Create New Alias**.
 
-## v2.7.0 - In-Game Overlay & Settings Redesign
-
 - **In-Game Overlay:**
   - Compact in-game sidebar for toggling overlays without alt-tabbing
 - **Settings:**
