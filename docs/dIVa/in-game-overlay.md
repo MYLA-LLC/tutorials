@@ -25,7 +25,7 @@ Game-dependent controls on the overlay strip:
 - Speed Leveling Tracker
 - Experience Meter
 - Gold Meter
-- Instance Alert (Path of Exile 2)
+- Instance Alert (Path of Exile / Path of Exile 2)
 - Sigils (Diablo IV)
 
 ### Feature Modes

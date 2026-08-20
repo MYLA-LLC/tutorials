@@ -30,17 +30,11 @@ A <a href="https://discord.gg/Kp4dNHbmcJ" class="text-accent underline">Discord<
 
 Please feel free to report any issues, or leave suggestions!
 
-## (Latest Features) v2.8.0 - Character Resolution
+## (Latest Features) v2.9.0 - PoE Gold Meter & Instance Alert
 
-- **Characters:** Smarter auto-sync when logging in, plus a clearer **Which Character Is This?** screen when dIVa cannot match your game character to a saved run. Choose **Sync Characters** or **Create New Alias**.
-
-- **In-Game Overlay:**
-  - Compact in-game sidebar for toggling overlays without alt-tabbing
-- **Settings:**
-  - Redesigned layout for new preferences and features; **Key Bindings**, and **Manage Data** provides Best Run view and delete, per-Meter and Characters deletion, preference resets, and a **Danger Zone** for full game or app data deletion
-- **Speed Leveling:**
-  - Records a new Best Run when the level cap increases, not only when beating the previous time at the same cap
-  - Improved Milestone notifications when a new personal best is saved
+- **Path of Exile:**
+  - **Gold Meter:** Track gold in real time on the dashboard and as an in-game overlay
+  - **Instance Alert:** Warns when town instances are at risk of expiring, matching Path of Exile 2
 
 Full changelog: [dIVa User Guide](https://myla-llc.github.io/tutorials/docs/dIVa/).
 

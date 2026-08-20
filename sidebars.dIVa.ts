@@ -7,7 +7,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Features",
-      items: ["characters", "meters", "meter-log-and-history", "speed-leveling-tracker", "offline-mode"],
+      items: ["characters", "meters", "meter-log-and-history", "speed-leveling-tracker", "offline-mode", "instance-alert"],
     },
     {
       type: "category",
@@ -28,7 +28,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Path of Exile 2",
-      items: ["class-detection", "instance-alert"],
+      items: ["class-detection"],
     },
   ],
 };

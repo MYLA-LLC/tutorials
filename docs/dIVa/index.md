@@ -23,13 +23,19 @@ Maximize your efficiency in every gaming session with dIVa!
 | Game                   | [Speed Leveling](./speed-leveling-tracker) | [Meters](./meters) / [Log](./meter-log-and-history#meter-log) | Special                                     |
 | ---------------------- | ------------------------------------------ | ------------------------------------------------------------- | ------------------------------------------- |
 | Path of Exile 2        | ✓                                          | ✓                                                             | [Instance Alert](./instance-alert)          |
-| Path of Exile          | ✓                                          | ✓                                                             | —                                           |
+| Path of Exile          | ✓                                          | ✓                                                             | [Instance Alert](./instance-alert)          |
 | Diablo IV              | ✓                                          | ✓                                                             | [Dungeons](./dungeons) / [Sigils](./sigils) |
 | Diablo II: Resurrected | ✓                                          | X                                                             | —                                           |
 
 </div>
 
 ## Changelog
+
+### v2.9.0 - PoE Gold Meter & Instance Alert
+
+- **Path of Exile:**
+  - **Gold Meter:** Track gold collected, gold per second, session high, and lifetime average on the dashboard and as an in-game overlay. See [Meters](./meters).
+  - **Instance Alert:** Town instance timer with visual and audio warnings when instances are at risk of expiring. Previously available only in Path of Exile 2. See [Instance Alert](./instance-alert).
 
 ### v2.8.0 - Character Resolution
 

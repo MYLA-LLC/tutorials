@@ -2,7 +2,7 @@
 title: Instance Alert
 ---
 
-The Instance Alert feature helps you track instance timers with audio-visual notifications, ensuring you don't lose progress by staying too long in town.
+The Instance Alert feature helps you track instance timers with audio-visual notifications, ensuring you don't lose progress by staying too long in town. Available in Path of Exile and Path of Exile 2.
 
 The alert system provides both visual and audio cues as you approach the instance timeout.
 
@@ -16,7 +16,7 @@ The alert system provides both visual and audio cues as you approach the instanc
 ### How Instance Alert Works
 
 1. The timer starts automatically when entering town.
-   - Default timer duration is 8 minutes (per Game Tip, instances last 8-15 minutes in Path of Exile 2)
+   - Default timer duration is 8 minutes (per Game Tip, instances last 8-15 minutes in Path of Exile and Path of Exile 2)
    - Countdown begins at 30 seconds remaining
    - The timer is reset when zoning back into the instance (e.g. taking town portal back out)
 2. Visual and Audio Alerts:
